@@ -1,0 +1,84 @@
+.msg_icon {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.msg_icon span {
+  background: #f00;
+  padding: 5px;
+  border-radius: 100%;
+  color: #fff;
+  vertical-align: top;
+  margin-left: -22px;
+}
+
+.msg_icon img {
+  display: inline-block;
+  width: 55px;
+}
+.msg_icon:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  flex: 1;
+  margin-left: 50px;
+  color: #eee;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+.notifi-box {
+  width: 300px;
+  border-radius: 0 0 20px 20px;
+  height: 0px;
+  opacity: 0;
+  background-color: #e1e2e2;
+  position: absolute;
+  top: 63px;
+  right: 35px;
+  transition: 1s opacity, 250ms height;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.notifi-box h2 {
+  font-size: 14px;
+  padding: 10px;
+  border-bottom: 1px solid rgb(89, 241, 160);
+  color: #999;
+}
+
+.notifi-box h2 span {
+  color: #f00;
+}
+
+.notifi-item {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  padding: 15px 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.notifi-item:hover {
+  background-color: #eee;
+}
+
+.notifi-item .img {
+  display: block;
+  width: 65px;
+  height: 70px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.notifi-item .text h4 {
+  color: #565555;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.notifi-item .text p {
+  color: #757474;
+  font-size: 12px;
+}
