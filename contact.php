@@ -1,6 +1,6 @@
 <?php
 include "action/login_header.php";
-//this is true
+
 if(isset($_GET['id_user'])){
 $id_user=$_GET['id_user'];
 $sql_user="SELECT * FROM user WHERE user.id='$id_user'  ";
