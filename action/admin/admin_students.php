@@ -7,9 +7,10 @@ include "../login_header.php";
 <html lang="en">
 <head>
 
-<?php include "../../inc/header.php" ?>
+<?php include"../../inc/header.php" ?>
+
 <title>students</title>
-<script src="../../js/user.js"></script>
+<script src="../js/user.js"></script>
 
 </head>
 

@@ -119,7 +119,7 @@ if (!empty($_POST["login"]) && !empty($_POST["email"]) && !empty($_POST["passwor
                     <p class="social-text"><a href="sign.php">create new account</a></p>
                 </form>
 
-                <?php include('inc/footer.php'); ?>
+               
 
 
                 <div class="social-media">
@@ -167,6 +167,8 @@ if (!empty($_POST["login"]) && !empty($_POST["email"]) && !empty($_POST["passwor
     </div>
 
     <script src="app.js"></script>
+
+    
 </body>
 
 </html>

@@ -66,7 +66,7 @@ form.sign-in-form {
   color: #444;
   /* margin-top:-5px; */
   margin-bottom: 5px;
-  color: #00bfa6;
+  color: #ff4546;
 }
 
 .error_msg {
@@ -82,7 +82,7 @@ form.sign-in-form {
 
 .success_msg {
   background: #75e0a2;
-  color: #00bf86;
+  color: #ff4546;
   padding: 8px;
   width: auto;
   border-radius: 5px;
@@ -104,7 +104,7 @@ form.sign-in-form {
 .input-field {
   max-width: 300px;
   width: 100%;
-  border: 1px solid #00bf86;
+  border: 1px solid #ff4546;
   background-color: #f0f0f0;
   margin: 6px 0;
   height: 40px;
@@ -177,13 +177,13 @@ form.sign-in-form {
 }
 
 .social-icon:hover {
-  color: #00bf86;
-  border-color: #00bf86;
+  color: #ff4546;
+  border-color: #ff4546;
 }
 
 .btn {
   width: 90px;
-  background-color: #00bf7f;
+  background-color: #ff4546;
   border: none;
   outline: none;
   height: 35px;
@@ -217,7 +217,7 @@ form.sign-in-form {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, #01bd7e 0%, #2ddaa0 100%);
+  background-image: linear-gradient(-45deg, #ff4546 0%, #f45858 100%);
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;

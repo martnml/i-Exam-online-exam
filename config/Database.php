@@ -16,11 +16,4 @@ class Database{
 		}
     }
 }
-
-
-
- 
-
-
-
 ?>

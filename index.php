@@ -42,7 +42,7 @@
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Welcome to</div>
-                <div class="text-2">i- <font style="color:#03bd8e;">Exam </font>
+                <div class="text-2">i- <font style="color:#ff4546;">Exam </font>
                 </div>
                 <div class="text-3">where there is <span class="typing"></span></div>
                 <a href="login.php">login now</a>
@@ -64,14 +64,14 @@
                         <br><br><b>my phone number:</b>+213557662824
                         <br><b>my personal email:</b>zergaouimedamine@gamil.com
                     </p>
-                    <a href="mailto:fortamine5@gmail.com">more details</a>
+                    <a href="mailto:Zergaouimedamine@gmail.com"> more details</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- footer section start -->
-    <?php include "footer.php" ?>
+    <?php include "inc/footer.php" ?>
 
     <script src="js/script.js"></script>
 </body>

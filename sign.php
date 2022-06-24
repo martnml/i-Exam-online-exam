@@ -42,17 +42,7 @@ $result=mysqli_query($conn,$sql_faculty);
                         <input type="text" placeholder="family name" name="first_name2" id="first_name2" required />
                     </div>
 
-                    <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input type="text" placeholder="first name" name="last_name2" id="last_name2" required />
-                    </div>
-
-
-                    <div class="input-field">
-                        <i class="fas fa-envelope"></i>
-                        <input type="email" placeholder="email" name="email2" id="email2" />
-                    </div>
-
+                   
 
                     <div class="input-field">
                         <i class=""></i>
@@ -109,7 +99,7 @@ $result=mysqli_query($conn,$sql_faculty);
                     <p class="social-text">
                         <a href="login.php">already have account</a>
                     </p>
-                    <!-- <div class="social-media">
+                     <!-- <div class="social-media">
               <a href="#" class="social-icon">
                 <i class="fab fa-facebook-f"></i>
               </a>
@@ -141,12 +131,7 @@ $result=mysqli_query($conn,$sql_faculty);
                         <i class="fas fa-user"></i>
                         <input type="text" placeholder="first_name" name="first_name1" id="first_name1" required />
                     </div>
-                    <div class="input-field">
-                        <i class="fas fa-user"></i>
-                        <input type="text" placeholder="last name" name="last_name1" id="last_name1" required />
-                    </div>
-
-
+                  
 
                     <div class="input-field">
                         <i class="fas fa-envelope"></i>
@@ -161,75 +146,11 @@ $result=mysqli_query($conn,$sql_faculty);
                     </div>
 
 
-                    <div class="input-field">
-                        <i class=""></i>
-                        <input type="text" placeholder="adress" name="adress1" id="adress1" required />
-                    </div>
+                  
 
 
 
-                    <div class="input-field">
-                        <i class=""></i>
-                        <select name="faculty" id="faculty" onchange="get_fact(this.value)">
-                            <option value=""> faculty</option>
-
-
-                            <?php 
-                            
-                            
-                         $sql_faculty2=" SELECT * FROM faculty ";
-                         $result2=mysqli_query($conn,$sql_faculty2);
-                            
-                            while($row_faculty=mysqli_fetch_assoc($result2)):
-
-                              echo '<option value="'.$row_faculty['name_faculty'].'">'.$row_faculty['name_faculty'].'</option>';
-
-                             endwhile; ?>
-
-
-                        </select>
-                    </div>
-
-
-                    <div class="input-field">
-                        <i class=""></i>
-                        <select name="departement" id="dep" onchange="get_depart(this.value)" required>
-                            <option value="">Departement</option>
-                        </select>
-                    </div>
-
-
-                    <div class="input-field">
-                        <i class=""></i>
-                        <select name="spec_1" id="spec_1" onchange="get_spec2(this.value)" required>
-                            <option value="">1st Specility</option>
-
-                        </select>
-                    </div>
-
-
-                    <div class="input-field">
-                        <i class=""></i>
-                        <select name="spec_2" id="spec_2" onchange="get_spec3(this.value)">
-                            <option value="">2nd Specility "optional"</option>
-
-                        </select>
-
-                    </div>
-
-
-
-                    <div class="input-field">
-                        <i class=""></i>
-                        <select name="spec_3" id="spec_3">
-                            <option value="">3nd Specility "optional"</option>
-
-                        </select>
-                    </div>
-
-
-
-                    <div class="input-field">
+     <div class="input-field">
                         <i class="fas fa-lock"></i>
                         <input type="password" placeholder="Password" name="password1" id="password1" required />
                     </div>
