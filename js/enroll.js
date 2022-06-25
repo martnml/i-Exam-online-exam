@@ -7,7 +7,7 @@ $(document).ready(function(){
 		'serverMethod': 'post',		
 		"order":[],
 		"ajax":{
-			url:"exam_action.php",
+			url:"../exam_action.php",
 			type:"POST",
 			data:{action:'getExamEnroll', 'exam_id':$('#examEnrollListing').attr('data-exam-id')},
 			dataType:"json"
@@ -25,7 +25,7 @@ $(document).ready(function(){
 		var id = $(this).attr("id");
 		var action = 'getUser';
 		$.ajax({
-			url:'users_action.php',
+			url:'../users_action.php',
 			method:"POST",
 			data:{id:id, action:action},
 			dataType:"json",

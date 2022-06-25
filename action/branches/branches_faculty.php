@@ -1,7 +1,7 @@
 <?php
-include_once 'config/Database.php';
-include_once 'class/User.php';
-include_once 'fact.php';
+include_once '../../config/Database.php';
+include_once '../../class/User.php';
+include_once '../../fact.php';
 
 $database = new Database();
 $db = $database->getConnection();
@@ -9,7 +9,7 @@ $db = $database->getConnection();
 $user = new User($db);
 
 if (!$user->loggedIn()) {
-    header("Location: login.php");
+    header("Location: ../../login.php");
 }
 
 
@@ -31,7 +31,7 @@ $num_count= mysqli_num_rows($result_count);
 <html lang="en">
 
 <head>
-    <?php include('inc/header.php'); ?>
+    <?php include('../../inc/header.php'); ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
@@ -39,9 +39,9 @@ $num_count= mysqli_num_rows($result_count);
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
-    <link rel="stylesheet" href="css/admin.css">
-    <link rel="stylesheet" href="css/notification.css">
-    <link rel="stylesheet" href="css/branches.css">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <link rel="stylesheet" href="../../css/notification.css">
+    <link rel="stylesheet" href="../../css/branches.css">
 
 
 
@@ -56,7 +56,7 @@ $num_count= mysqli_num_rows($result_count);
         <div class="sidebar-menu">
             <ul>
                 <li>
-                    <a href="admin_students.php"><span class="las la-users">
+                    <a href="../admin/admin_students.php"><span class="las la-users">
 
                             <p style="font-size:17px;">students</p>
                         </span>
@@ -64,7 +64,7 @@ $num_count= mysqli_num_rows($result_count);
                 </li>
 
                 <li>
-                    <a href="admin_teachers.php"><span class="las la-user"></span>
+                    <a href="../admin/admin_teachers.php"><span class="las la-user"></span>
                         </br>
                         <p style="font-size:17px;">teachers</p></span>
 
@@ -78,7 +78,7 @@ $num_count= mysqli_num_rows($result_count);
                     </a>
                 </li>
                 <li>
-                    <a href="admin_exams.php">
+                    <a href="../admin/admin_exams.php">
 
                         <p style="font-size:17px;">exams</p>
                     </a>
@@ -86,7 +86,7 @@ $num_count= mysqli_num_rows($result_count);
 
 
                 <li>
-                    <a href="logout.php" onclick="return confirm('Are You sure you want to logout ?');">
+                    <a href="../../logout.php" onclick="return confirm('Are You sure you want to logout ?');">
 
                         <p style="font-size:17px;">logout</p>
                     </a>
@@ -101,7 +101,7 @@ $num_count= mysqli_num_rows($result_count);
             <h2>
                 <label for="nav-toggle">
 
-                </label> I-<font style="color:#2ecc71">Exam</font>
+                </label> I-<font style="color:#ff4546;">Exam</font>
             </h2>
 
             <!-- <div class="search-wrapper">
@@ -109,7 +109,7 @@ $num_count= mysqli_num_rows($result_count);
                 <input type="search" placeholder="SEARCH" />
             </div> -->
             <div class="user-wrapper">
-                <a href="profile.php"><img src="img/setting.png" width="40px" height="40px" alt=""></a>
+                <a href="profile.php"><img src="../../img/setting.png" width="40px" height="40px" alt=""></a>
                 <div>
                     <h4> <?php echo $_SESSION['name']; ?> </h4>
                     <small> <?php echo $_SESSION['role']; ?> </small>
@@ -117,7 +117,7 @@ $num_count= mysqli_num_rows($result_count);
             </div>
 
             <div class="msg_icon" onclick="toggleNotifi()">
-                <img src="img/ring.png" alt="">
+                <img src="../../img/ring.png" alt="">
                 <span id="msg_count"></span>
 
             </div>
@@ -131,7 +131,7 @@ $num_count= mysqli_num_rows($result_count);
 
 
 
-        <main style="background:#dfe9e6;">
+        <main style="background:#e7ebf9;">
             <div class="cards">
 
                 <div class="card-single">
@@ -178,7 +178,7 @@ $num_count= mysqli_num_rows($result_count);
 
 
             <div class="card">
-                <div class="card-image" style="background-image: url('img/faculty.jpeg');">
+                <div class="card-image" style="background-image: url('../../img/faculty.jpeg');">
                     <h2 class="card-heading">
 
 
@@ -198,7 +198,7 @@ $num_count= mysqli_num_rows($result_count);
                     <a href="branches_depart.php?id_fact=<?php echo $row_fact['id_faculty']; ?>">
                         <?php echo $row_fact['name_faculty']; ?></a> &nbsp;
 
-                    <img src="img/delete_sign.png " style="width:5%;display:inline;" type="button" name="delete"
+                    <img src="../../img/delete_sign.png " style="width:5%;display:inline;" type="button" name="delete"
                         id="<?php echo $row_fact['id_faculty']; ?>" onclick="delete_fact(this.id)">
 
 
@@ -234,9 +234,9 @@ $num_count= mysqli_num_rows($result_count);
         </main>
 
     </div>
-    <script src="js/select.js"></script>
-    <script src="js/stat.js"></script>
-    <script src="js/js_notification.js"></script>
+    <script src="../../js/select.js"></script>
+    <script src="../../js/stat.js"></script>
+    <script src="../../js/js_notification.js"></script>
 </body>
 
 </html>

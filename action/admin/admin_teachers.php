@@ -49,7 +49,7 @@ $num_count = mysqli_num_rows($result_count);
                     </a>
                 </li>
                 <li>
-                    <a href="branches_faculty.php">
+                    <a href="../branches/branches_faculty.php">
                         </br>
                         <p style="font-size:17px;">branches</p>
                         </span>
@@ -79,7 +79,7 @@ $num_count = mysqli_num_rows($result_count);
             <h2>
                 <label for="nav-toggle">
 
-                </label> I-<font style="color:#2ecc71">Exam</font>
+                </label> I-<font style="color:#ff4546;">Exam</font>
             </h2>
 
             <!-- <div class="search-wrapper">
@@ -95,7 +95,7 @@ $num_count = mysqli_num_rows($result_count);
             </div>
 
             <div class="msg_icon" onclick="toggleNotifi()">
-                <img src="img/ring.png" alt="">
+                <img src="../../img/ring.png" alt="">
                 <span id="msg_count"></span>
 
             </div>
@@ -108,7 +108,7 @@ $num_count = mysqli_num_rows($result_count);
 
 
 
-        <main style="background:#dfe9e6;">
+        <main style="background:#e7ebf9;">
             <div class="cards">
 
                 <div class="card-single">
@@ -170,7 +170,7 @@ $num_count = mysqli_num_rows($result_count);
                 </div>
                 <table id="userListing" class="table table-bordered table-striped">
                     <thead>
-                        <tr style="background-color:#0dd19f;">
+                        <tr style="background-color:#ff4546;">
                             <th>Id</th>
                             <th>Name</th>
                             <th>Email</th>
@@ -246,7 +246,7 @@ $num_count = mysqli_num_rows($result_count);
                         <div class="modal-body">
                             <table id="" class="table table-bordered table-striped">
                                 <thead>
-                                    <tr style="background-color:#0dd19f;">
+                                    <tr style="background-color:#ff4546;">
                                         <th>Id</th>
                                         <th>Email</th>
                                         <th>Mobile</th>

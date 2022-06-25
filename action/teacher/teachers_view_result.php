@@ -19,7 +19,7 @@ if (!empty($_GET['exam_id'])) {
 }
 
 
-include('fact.php');
+include('../../fact.php');
 
 ?>
 
@@ -113,7 +113,7 @@ include('fact.php');
             <h2>
                 <label for="nav-toggle">
 
-                </label> I-<font style="color:#2ecc71">Exam</font>
+                </label> I-<font style="color:#ff4546;">Exam</font>
             </h2>
 
             <!-- <div class="search-wrapper">
@@ -143,7 +143,7 @@ include('fact.php');
 
 
 
-        <main style="background:#dfe9e6;">
+        <main style="background:#e7ebf9;">
             <div class="cards">
 
 
@@ -223,7 +223,7 @@ include('fact.php');
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table table-bordered table-hover">
-                            <tr style="background-color:#0dd19f;">
+                            <tr style="background-color:#ff4546;">
                                 <th>Question</th>
                                 <th>Option 1</th>
                                 <th>Option 2</th>

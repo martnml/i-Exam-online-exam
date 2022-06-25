@@ -52,7 +52,7 @@
             <h2>
                 <label for="nav-toggle">
                     
-                </label> I-<font style="color:#2ecc71">Exam</font>
+                </label> I-<font style="color:#ff4546;">Exam</font>
             </h2>
 
             <!-- <div class="search-wrapper">

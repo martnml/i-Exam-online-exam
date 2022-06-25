@@ -2,7 +2,7 @@
 include_once '../../config/Database.php';
 include_once '../class/User.php';
 include_once '../../class/Exam.php';
-include_once '../../fact.php';
+include_once '../../../../fact.php';
 
 $database = new Database();
 $db = $database->getConnection();
@@ -117,7 +117,7 @@ $_SESSION['the_user']=$_SESSION['userid'];
             <h2>
                 <label for="nav-toggle">
 
-                </label> I-<font style="color:#2ecc71">Exam</font>
+                </label> I-<font style="color:#ff4546;">Exam</font>
             </h2>
 
             <!-- <div class="search-wrapper">
@@ -194,7 +194,7 @@ $_SESSION['the_user']=$_SESSION['userid'];
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-bordered table-hover">
-                                <tr style="background-color:#0dd19f;">
+                                <tr style="background-color:#ff4546;">
                                     <th>Question</th>
                                     <th>Option 1</th>
                                     <th>Option 2</th>

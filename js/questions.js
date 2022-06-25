@@ -7,7 +7,7 @@ $(document).ready(function () {
 		'serverMethod': 'post',
 		"order": [],
 		"ajax": {
-			url: "questions_action.php",
+			url: "../questions_action.php",
 			type: "POST",
 			data: { action: 'listQuestions', 'exam_id': $('#questionsListing').attr('data-exam-id') },
 			dataType: "json"
@@ -39,7 +39,7 @@ $(document).ready(function () {
 		var id = $(this).attr("id");
 		var action = 'getQuestion';
 		$.ajax({
-			url: 'questions_action.php',
+			url: '../questions_action.php',
 			method: "POST",
 			data: { question_id: id, action: action },
 			dataType: "json",
@@ -69,7 +69,7 @@ $(document).ready(function () {
 		$('#save').attr('disabled', 'disabled');
 		var formData = $(this).serialize();
 		$.ajax({
-			url: "questions_action.php",
+			url: "../questions_action.php",
 			method: "POST",
 			data: formData,
 			success: function (data) {
@@ -86,7 +86,7 @@ $(document).ready(function () {
 		var action = "deleteQuestions";
 		if (confirm("Are you sure you want to delete this Question?")) {
 			$.ajax({
-				url: "questions_action.php",
+				url: "../questions_action.php",
 				method: "POST",
 				data: { id: id, action: action },
 				success: function (data) {

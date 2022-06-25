@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var getstat = "";
-    $.post("fact.php", { getstat: getstat }, function (data) {
+    $.post("../../fact.php", { getstat: getstat }, function (data) {
         // console.log(data);
         var array = data.split(',');
         $("#student").html(array[1]);
@@ -11,7 +11,7 @@ $(document).ready(function () {
 
  $(document).ready(function () {
     var getbranches = "";
-    $.post("fact.php", { getbranches: getbranches }, function (data) {
+    $.post("../../fact.php", { getbranches: getbranches }, function (data) {
         // console.log(data);
         var array = data.split(',');
         $("#faculty").html(array[1]);
@@ -23,7 +23,7 @@ $(document).ready(function () {
 
 setInterval(function () {  $(document).ready(function () {
     var get_notif = "";
-    $.post("fact.php", { get_notif: get_notif }, function (data) {
+    $.post("../../fact.php", { get_notif: get_notif }, function (data) {
     $("#box").html(data);
 
     });
@@ -33,7 +33,7 @@ setInterval(function () {  $(document).ready(function () {
 // setInterval(function () { 
      $(document).ready(function () {
     var get_count = "";
-    $.post("fact.php", { get_count: get_count }, function (data) {
+    $.post("../../fact.php", { get_count: get_count }, function (data) {
        var $data=data;
          if($data!='0')  $("#msg_count").html(data);
         else $("#msg_count").css("display","none");

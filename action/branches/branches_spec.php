@@ -1,7 +1,7 @@
 <?php
 include_once 'config/Database.php';
 include_once 'class/User.php';
-include_once 'fact.php';
+include_once '../../fact.php';
 
 
 $database = new Database();
@@ -106,7 +106,7 @@ $num_count= mysqli_num_rows($result_count);
             <h2>
                 <label for="nav-toggle">
 
-                </label> I-<font style="color:#2ecc71">Exam</font>
+                </label> I-<font style="color:#ff4546;">Exam</font>
             </h2>
 
             <!-- <div class="search-wrapper">
@@ -137,7 +137,7 @@ $num_count= mysqli_num_rows($result_count);
 
 
 
-        <main style="background:#dfe9e6;">
+        <main style="background:#e7ebf9;">
             <div class="cards">
 
 

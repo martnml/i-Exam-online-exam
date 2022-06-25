@@ -9,7 +9,7 @@ function toggleNotifi() {
 
     var get_count = "";
 
-    $.post("fact.php", { get_count: get_count }, function (data) {
+    $.post("../../fact.php", { get_count: get_count }, function (data) {
       var $data = data;
 
       if ($data != "0") $("#msg_count").html(data);

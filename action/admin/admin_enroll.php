@@ -68,7 +68,7 @@
             <h2>
                 <label for="nav-toggle">
 
-                </label> I-<font style="color:#2ecc71">Exam</font>
+                </label> I-<font style="color:#ff4546;">Exam</font>
             </h2>
 
             <!-- <div class="search-wrapper">
@@ -190,7 +190,7 @@
                         <table id="examEnrollListing" data-exam-id="<?php echo $_GET['exam_id']; ?>"
                             class="table table-bordered table-striped">
                             <thead>
-                                <tr style="background-color:#0dd19f;">
+                                <tr style="background-color:#ff4546;">
                                     <th>Id</th>
                                     <th>Name</th>
                                     <th>Email</th>

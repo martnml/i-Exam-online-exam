@@ -2,7 +2,7 @@
 
 function delete_fact(id) {
   if (confirm("Are you sure you want to delete this Faculty ?")) {
-    $.post("fact.php", { delete_fact: id }, function () {
+    $.post("../../fact.php", { delete_fact: id }, function () {
       window.location.reload(true);
     });
   } else {
@@ -14,7 +14,7 @@ function delete_fact(id) {
 
 function delete_depart(id) {
   if (confirm("Are you sure you want to delete this Departement ?")) {
-    $.post("fact.php", { delete_depart: id }, function () {
+    $.post("../../fact.php", { delete_depart: id }, function () {
       window.location.reload(true);
     });
   } else {
@@ -24,7 +24,7 @@ function delete_depart(id) {
 //---------------------delete specility ---------------------------------
 function delete_spec(id) {
   if (confirm("Are you sure you want to delete this Specility ?")) {
-    $.post("fact.php", { delete_spec: id }, function (data) {
+    $.post("../../fact.php", { delete_spec: id }, function (data) {
       // window.location.reload(true);
       alert(data);
     });
@@ -36,7 +36,7 @@ function delete_spec(id) {
 function delete_notif(id) {
   if (confirm("Are you sure you want to delete this notification ?")) {
     
-    $.post("fact.php", { delete_notif: id }, function (data) {
+    $.post("../../fact.php", { delete_notif: id }, function (data) {
       alert(data);
     });
 
@@ -50,7 +50,7 @@ $('#send').click(function (event) {
   // var respond = $("#respond").val();
   // var title = $("#title").val();
 
-  // $.post("fact.php", { send_msg: respond }, function (data) {
+  // $.post("../../fact.php", { send_msg: respond }, function (data) {
   //   // window.location.reload(true);
   //   alert(data);
   // });
@@ -62,7 +62,7 @@ $('#send').click(function (event) {
 
   $.ajax({
     type: "POST",
-    url: "fact.php",
+    url: "../../fact.php",
     data: formData,
     dataType: "json",
     encode: true,
@@ -83,7 +83,7 @@ function insert_fact() {
   var fact_name = $("#insert_faculty").val();
 
   if (confirm("Are you sure you want to Add a faculty ?")) {
-    $.post("fact.php", { insert_fact: fact_name }, function () {
+    $.post("../../fact.php", { insert_fact: fact_name }, function () {
       window.location.reload(true);
     });
   } else {
@@ -99,14 +99,14 @@ function insert_depart(id) {
   };
 
   if (confirm("Are you sure you want to Add a new departement ?")) {
-    // $.post("fact.php", { insert_depart: formData}, function () {
+    // $.post("../../fact.php", { insert_depart: formData}, function () {
     //   window.location.reload(true);
 
     // });
 
     $.ajax({
       type: "POST",
-      url: "fact.php",
+      url: "../../fact.php",
       data: formData,
 
       encode: true,
@@ -133,14 +133,14 @@ function insert_spec(id) {
   };
 
   if (confirm("Are you sure you want to Add a new specility ?")) {
-    // $.post("fact.php", { insert_depart: formData}, function () {
+    // $.post("../../fact.php", { insert_depart: formData}, function () {
     //   window.location.reload(true);
 
     // });
 
     $.ajax({
       type: "POST",
-      url: "fact.php",
+      url: "../../fact.php",
       data: formData,
 
       encode: true,

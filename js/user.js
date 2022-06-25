@@ -9,7 +9,7 @@ $(document).ready(function (user) {
 		'serverMethod': 'post',
 		"order": [],
 		"ajax": {
-			url: "users_action.php",
+			url: "../users_action.php",
 			type: "POST",
 			data: { user: user, action: 'listUsers' },
 			dataType: "json"
@@ -27,7 +27,7 @@ $(document).ready(function (user) {
 		var id = $(this).attr("id");
 		var action = 'getUser';
 		$.ajax({
-			url: 'users_action.php',
+			url: '../users_action.php',
 			method: "POST",
 			data: { id: id, action: action },
 			dataType: "json",
@@ -60,7 +60,7 @@ $(document).ready(function (user) {
 		var userId = $(this).attr("id");
 		var action = 'getUserDetails';
 		$.ajax({
-			url: 'users_action.php',
+			url: '../users_action.php',
 			method: "POST",
 			data: { userId: userId, action: action },
 			dataType: "json",
@@ -88,7 +88,7 @@ $(document).ready(function (user) {
 		$('#save').attr('disabled', 'disabled');
 		var formData = $(this).serialize();
 		$.ajax({
-			url: "users_action.php",
+			url: "../users_action.php",
 			method: "POST",
 			data: formData,
 			success: function (data) {
@@ -105,7 +105,7 @@ $(document).ready(function (user) {
 		var action = "deleteUser";
 		if (confirm("Are you sure you want to delete this student?")) {
 			$.ajax({
-				url: "users_action.php",
+				url: "../users_action.php",
 				method: "POST",
 				data: { userId: userId, action: action },
 				success: function (data) {

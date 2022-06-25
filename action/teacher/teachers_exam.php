@@ -87,7 +87,7 @@ $num_count= mysqli_num_rows($result_count);
             <h2>
                 <label for="nav-toggle">
 
-                </label> I-<font style="color:#2ecc71">Exam</font>
+                </label> I-<font style="color:#ff4546;">Exam</font>
             </h2>
 
             <!-- <div class="search-wrapper">
@@ -114,7 +114,7 @@ $num_count= mysqli_num_rows($result_count);
             </div>
         </header>
 
-        <main style="background:#dfe9e6;">
+        <main style="background:#e7ebf9;">
             <div class="cards">
 
 
@@ -189,7 +189,7 @@ $num_count= mysqli_num_rows($result_count);
                     </div>
                     <table id="examListing" class="table table-bordered table-striped">
                         <thead>
-                            <tr style="background-color:#0dd19f;">
+                            <tr style="background-color:#ff4546;">
                                 <th>Id</th>
                                 <th>Exam Title</th>
                                 <th>Specility</th>
@@ -355,7 +355,7 @@ $num_count= mysqli_num_rows($result_count);
         <script>
         $(document).ready(function() {
             var teacher_specility = "";
-            $.post("fact.php", {
+            $.post("../../fact.php", {
                     teacher_specility: teacher_specility
                 },
                 function(data) {

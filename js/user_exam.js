@@ -3,7 +3,7 @@ $(document).ready(function(){
 		$('#exam_list').attr('required', 'required');		
 		exam_id = $('#exam_list').val();
 		$.ajax({
-			url:"user_exam_action.php",
+			url:"../user_exam_action.php",
 			method:"POST",
 			data:{action:'examDetails', page:'index', exam_id:exam_id},
 			success:function(data){
@@ -19,7 +19,7 @@ $(document).ready(function(){
 	$(document).on('click', '#enrollExam', function(){
 		var exam_id = $('#enrollExam').attr('data-exam_id');		
 		$.ajax({
-			url:"user_exam_action.php",
+			url:"../user_exam_action.php",
 			method:"POST",
 			data:{action:'enrollExam', exam_id:exam_id},
 			beforeSend:function() {
@@ -43,7 +43,7 @@ $(document).ready(function(){
 		'serverMethod': 'post',		
 		"order":[],
 		"ajax":{
-			url:"user_exam_action.php",
+			url:"../user_exam_action.php",
 			type:"POST",
 			data:{action:'listUserExam'},
 			dataType:"json"
@@ -117,7 +117,7 @@ $(document).ready(function(){
 		var answerOption = $(this).data('id');
 		var examId = $('#processExamId').attr('data-exam_id');
 		$.ajax({
-			url:"user_exam_action.php",
+			url:"../user_exam_action.php",
 			method:"POST",
 			data:{question_id:questionId, answer_option:answerOption, exam_id:examId, action:'answer'},
 			success:function(data) {
@@ -148,7 +148,7 @@ function questionNavigation() {
 		var examId = $('#processExamId').data('data-exam_id');
 		if(examId) {
 			$.ajax({
-				url:"user_exam_action.php",
+				url:"../user_exam_action.php",
 				method:"POST",
 				data:{exam_id:examId, action:'questionNavigation'},
 				success:function(data) {
@@ -167,7 +167,7 @@ function questionNavigation() {
 function loadQuestion(question_id = '') {
 	var examId = $('#processExamId').attr('data-exam_id');
 	$.ajax({
-		url:"user_exam_action.php",
+		url:"../user_exam_action.php",
 		method:"POST",
 		data:{exam_id:examId, question_id:question_id, action:'loadQuestion'},
 		success:function(data){			

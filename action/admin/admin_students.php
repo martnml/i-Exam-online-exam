@@ -7,10 +7,10 @@ include "../login_header.php";
 <html lang="en">
 <head>
 
-<?php include"../../inc/header.php" ?>
+<?php include "../../inc/header.php"; ?>
 
 <title>students</title>
-<script src="../js/user.js"></script>
+<script src="../../js/user.js"></script>
 
 </head>
 
@@ -42,7 +42,7 @@ include "../login_header.php";
                     </a>
                 </li>
                 <li>
-                    <a href="../branches_faculty.php">
+                    <a href="../branches/branches_faculty.php">
                         </br>
                         <p style="font-size:17px;">branches</p>
                         </span>
@@ -72,7 +72,7 @@ include "../login_header.php";
             <h2>
                 <label for="nav-toggle">
 
-                </label> I-<font style="color:#2ecc71">Exam</font>
+                </label> I-<font style="color:#ff4546;">Exam</font>
             </h2>
 
             <!-- <div class="search-wrapper">
@@ -80,7 +80,7 @@ include "../login_header.php";
                 <input type="search" placeholder="SEARCH" />
             </div> -->
             <div class="user-wrapper">
-                <a href="../profile.php"><img src="../../img/setting.png" width="40px" height="40px" alt=""></a>
+                <a href="../../profile.php"><img src="../../img/setting.png" width="40px" height="40px" alt=""></a>
                 <div>
                     <h4> <?php echo $_SESSION['name']; ?> </h4>
                     <small> <?php echo $_SESSION['role']; ?> </small>
@@ -101,7 +101,7 @@ include "../login_header.php";
 
 
 
-        <main style="background:#dfe9e6;">
+        <main style="background:#e7ebf9;">
             <div class="cards">
 
                 <div class="card-single">
@@ -163,7 +163,7 @@ include "../login_header.php";
                 </div>
                 <table id="userListing" class="table table-bordered table-striped">
                     <thead>
-                        <tr style="background-color:#0dd19f;">
+                        <tr style="background-color:#ff4546;">
                             <th>Id</th>
                             <th>Name</th>
                             <th>Email</th>
@@ -254,7 +254,7 @@ include "../login_header.php";
                         <div class="modal-body">
                             <table id="" class="table table-bordered table-striped">
                                 <thead>
-                                    <tr style="background-color:#0dd19f;">
+                                    <tr style="background-color:#ff4546;">
                                         <th>Id</th>
                                         <th>Email</th>
                                         <th>Mobile</th>
@@ -371,9 +371,9 @@ include "../login_header.php";
     </main>
 
     </div>
-    <script src="../../js/select.js"></script>
+    <!-- <script src="../../js/select.js"></script> -->
 
-    <script src="../../js/js_notification.js"></script>
+    <!-- <script src="../../js/js_notification.js"></script> -->
 </body>
 
 </html>
