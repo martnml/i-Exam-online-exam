@@ -51,11 +51,11 @@ if (!$user->loggedIn()) {
 
         <div class="sidebar-menu">
             <ul>
-                <?php include('links.php')?>
+                <?php include('../inc/links.php')?>
 
 
                 <li>
-                    <a href="logout.php" onclick="return confirm('Are You sure you want to logout ?');">
+                    <a href="../../logout.php" onclick="return confirm('Are You sure you want to logout ?');">
                         </br>
                         <p style="font-size:17px;">logout</p>
                     </a>

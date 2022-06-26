@@ -38,7 +38,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="branches_faculty.php">
+                    <a href="../branches/branches_faculty.php">
                         </br>
                         <p style="font-size:17px;">branches</p>
                         </span>

@@ -27,7 +27,7 @@ $(document).ready(function () {
 
     var getbranches = "";
 
-    $.post("../../../fact.php", { getbranches: getbranches }, function (data) {
+    $.post("../../fact.php", { getbranches: getbranches }, function (data) {
         console.log(data);
 
         var array = data.split(',');

@@ -42,7 +42,7 @@ $num_count = mysqli_num_rows($result_count);
 
                 <li>
                     <a href="admin_teachers.php" class="active">
-                        <span class="las la-user"></span>
+                        <span class="las la-user" style="font-size:17px;">Teachers</span>
                         </br>
                         <p style="font-size:17px;">teachers</p></span>
 

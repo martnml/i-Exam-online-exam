@@ -13,7 +13,7 @@ $num_count= mysqli_num_rows($result_count);
 <head>
 <?php include "../../inc/header.php" ?>
 <title>exams</title>
-<script src="../../exam.js"></script>
+<script src="../../js/exam.js"></script>
 </head>
 
 <body>
@@ -42,7 +42,7 @@ $num_count= mysqli_num_rows($result_count);
                     </a>
                 </li>
                 <li>
-                    <a href="branches_faculty.php">
+                    <a href="../branches/branches_faculty.php">
                         </br>
                         <p style="font-size:17px;">branches</p>
                         </span>
@@ -57,7 +57,7 @@ $num_count= mysqli_num_rows($result_count);
 
 
                 <li>
-                    <a href="logout.php" onclick="return confirm('Are You sure you want to logout ?');">
+                    <a href="../../logout.php" onclick="return confirm('Are You sure you want to logout ?');">
                         </br>
                         <p style="font-size:17px;">logout</p>
                     </a>
@@ -80,7 +80,7 @@ $num_count= mysqli_num_rows($result_count);
                 <input type="search" placeholder="SEARCH" />
             </div> -->
             <div class="user-wrapper">
-                <a href="profile.php"><img src="img/setting.png" width="40px" height="40px" alt=""></a>
+                <a href="profile.php"><img src="../../img/setting.png" width="40px" height="40px" alt=""></a>
                 <div>
                     <h4> <?php echo $_SESSION['name']; ?> </h4>
                     <small> <?php echo $_SESSION['role']; ?> </small>
@@ -88,7 +88,7 @@ $num_count= mysqli_num_rows($result_count);
             </div>
 
             <div class="msg_icon" onclick="toggleNotifi()">
-                <img src="img/ring.png" alt="">
+                <img src="../../img/ring.png" alt="">
                 <?php  if($num_count != 0)  echo '<span>'. $num_msg .'</span>'; ?>
 
             </div>

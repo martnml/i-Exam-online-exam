@@ -76,7 +76,7 @@ $num_count= mysqli_num_rows($result_count);
                     </a>
                 </li>
                 <li>
-                    <a href="branches_faculty.php" class="active">
+                    <a href="../branches/branches_faculty.php" class="active">
 
                         <p style="font-size:17px;">branches</p>
                         </span>
@@ -91,7 +91,7 @@ $num_count= mysqli_num_rows($result_count);
 
 
                 <li>
-                    <a href="logout.php" onclick="return confirm('Are You sure you want to logout ?');">
+                    <a href="../../logout.php" onclick="return confirm('Are You sure you want to logout ?');">
 
                         <p style="font-size:17px;">logout</p>
                     </a>

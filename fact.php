@@ -1,6 +1,6 @@
 <?php
 
-include('../../config/db_conn.php');
+include('config/db_conn.php');
 
 
 

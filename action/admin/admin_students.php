@@ -27,7 +27,7 @@ include "../login_header.php";
 
             <ul>
                 <li>
-                    <a href="admin_students.php" class="active"><span class="las la-users">
+                    <a href="admin_students.php" style="font-size:17px;"  class="active">Student<span class="las la-users">
                             <p style="font-size:17px;">students</p>
                         </span>
                     </a>

@@ -75,7 +75,7 @@ $_SESSION['the_user']=$_SESSION['userid'];
                 </li>
                 <br>
                 <li>
-                    <a href="logout.php">
+                    <a href="../../logout.php">
                         <p style="font-size:17px;">Logout</p>
                     </a>
                 </li>

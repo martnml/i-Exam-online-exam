@@ -97,7 +97,7 @@ include('../../fact.php');
                 </li>
 
                 <li>
-                    <a href="logout.php" onclick="return confirm('Are You sure you want to logout ?');">
+                    <a href="../../logout.php" onclick="return confirm('Are You sure you want to logout ?');">
                         </br>
                         <p style="font-size:17px;">logout</p>
                     </a>

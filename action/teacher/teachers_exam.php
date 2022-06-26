@@ -71,7 +71,7 @@ $num_count= mysqli_num_rows($result_count);
                     </a>
                 </li>
                 <li>
-                    <a href="logout.php" onclick="return confirm('Are You sure you want to logout ?');">
+                    <a href="../../logout.php" onclick="return confirm('Are You sure you want to logout ?');">
                         </br>
                         <p style="font-size:16px;">logout</p>
                     </a>

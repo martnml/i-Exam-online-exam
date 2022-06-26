@@ -71,7 +71,7 @@ $num_count= mysqli_num_rows($result_count);
                     </a>
                 </li>
                 <li>
-                    <a href="branches_faculty.php" class="active">
+                    <a href="../branches/branches_faculty.php" class="active">
 
                         <p style="font-size:17px;">branches</p>
                         </span>

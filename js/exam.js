@@ -7,7 +7,7 @@ $(document).ready(function () {
 		'serverMethod': 'post',
 		"order": [],
 		"ajax": {
-			url: "exam_action.php",
+			url: "../exam_action.php",
 			type: "POST",
 			data: { action: 'listExam' },
 			dataType: "json"
@@ -39,7 +39,7 @@ $(document).ready(function () {
 		var action = 'getExam';
 		
 		$.ajax({
-			url: 'exam_action.php',
+			url: '../exam_action.php',
 			method: "POST",
 			data: { id: id, action: action },
 			dataType: "json",
@@ -72,7 +72,7 @@ $(document).ready(function () {
 		$('#save').attr('disabled', 'disabled');
 		var formData = $(this).serialize();
 		$.ajax({
-			url: "exam_action.php",
+			url: "../exam_action.php",
 			method: "POST",
 			data: formData,
 			success: function (data) {
@@ -89,7 +89,7 @@ $(document).ready(function () {
 		var action = "deleteExam";
 		if (confirm("Are you sure you want to delete this Exam?")) {
 			$.ajax({
-				url: "exam_action.php",
+				url: "../exam_action.php",
 				method: "POST",
 				data: { id: id, action: action },
 				success: function (data) {
@@ -105,7 +105,7 @@ $(document).ready(function () {
 		var id = $(this).attr("id");
 		var action = 'getTasks';
 		$.ajax({
-			url: 'exam_action.php',
+			url: '../exam_action.php',
 			method: "POST",
 			data: { id: id, action: action },
 			dataType: "json",

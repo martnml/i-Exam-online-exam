@@ -15,7 +15,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="../../js/jquery.dataTables.min.js"></script>
 <script src="../../js/dataTables.bootstrap.min.js"></script>
-<!-- <script src="../../js/stat.js"></script> -->
+ <script src="../../js/stat.js"></script>
 <script src="../../js/js_notification.js"></script>
 
 
