@@ -1,11 +1,5 @@
 <?php               
-$host  = 'localhost';
-$user  = 'root';
-$password   = "";
- $database  = "exam_system"; 
-                   
-                        
- $conn = new mysqli($host, $user, $password, $database);
+include_once "config/db_conn.php";
 
 $sql_faculty=" SELECT * FROM faculty ";
 $result=mysqli_query($conn,$sql_faculty);
