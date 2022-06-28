@@ -1,15 +1,15 @@
 <?php
-include_once 'config/Database.php';
-include_once 'class/User.php';
+include_once '../config/Database.php';
+include_once '../class/User.php';
 
-include('config/db_conn.php');
+include('../config/db_conn.php');
 $database = new Database();
 $db = $database->getConnection();
 
 $user = new User($db);
 
 if (!$user->loggedIn()) {
-    header("Location: login.php");
+    header("Location: ../login.php");
 }
 
 
@@ -28,17 +28,17 @@ if (!$user->loggedIn()) {
 <html lang="en">
 
 <head>
-    <?php    include('inc/header.php'); ?>
+    <?php    include('../inc/header.php'); ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <title>exams</title>
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link rel="stylesheet" href="css/admin.css">
-    <link rel="stylesheet" href="css/notification.css">
-    <link rel="stylesheet" href="css/switch.css">
-    <!-- <script src="js/update.js"></script> -->
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/notification.css">
+    <link rel="stylesheet" href="../css/switch.css">
+    <!-- <script src="../js/update.js"></script> -->
 </head>
 
 <body style="background-color:#e7eaf1;">
@@ -51,11 +51,99 @@ if (!$user->loggedIn()) {
 
         <div class="sidebar-menu">
             <ul>
-                <?php include('../inc/links.php')?>
+            <?php 
+if($_SESSION['role']=='teacher')
+echo'
+<li>
+                    <a href="teachers/teachers_exam.php" >
+                        </br>
+                        <p style="font-size:17px;">exams</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        </br>
+                        <p style="font-size:15px;margin-left:25px;">exam questions</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        </br>
+                        <p style="font-size:15px;margin-left:25px;">students results</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        </br>
+                        <p style="font-size:15px;margin-left:40px;">his\her result</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active">
+                        <p style="font-size:17px;">Contact admin</p>
+                    </a>
+                </li>';
+
+else if($_SESSION['role']=='student')  
+  echo' <ul>
+      <li>
+          <a href="student/student_enroll_exam.php" >
+              <p style="font-size:17px;">Exams</p>
+          </a>
+      </li>
+      <br>
+      <li>
+          <a href="student/student_view_exam.php">
+              <p style="font-size:17px;">Check Exams</p>
+          </a>
+      </li>
+      <br>
+      <li>
+          <a href="#">
+              <p style="font-size:15px;">Passing Exam & check result</p>
+          </a>
+      </li>
+      <br>
+      <li>
+         <a href="#" class="active">
+                        <p style="font-size:17px;">Contact admin</p>
+     </li>';      
+
+else echo
+'<li>
+<a href="admin/admin_students.php" ><span class="las la-users">
+        <p style="font-size:17px;">students</p>
+    </span>
+</a>
+</li>
+<li>
+<a href="admin/admin_teachers.php">
+    <span class="las la-user"></span>
+    </br>
+    <p style="font-size:17px;">teachers</p></span>
+
+</a>
+</li>
+<li>
+<a href="branches/branches_faculty.php">
+    </br>
+    <p style="font-size:17px;">branches</p>
+    </span>
+</a>
+</li>
+<li>
+<a href="admin/admin_exams.php">
+    </br>
+    <p style="font-size:15px;">exams</p>
+</a>
+</li>';
+
+
+?>
 
 
                 <li>
-                    <a href="../../logout.php" onclick="return confirm('Are You sure you want to logout ?');">
+                    <a href="../logout.php" onclick="return confirm('Are You sure you want to logout ?');">
                         </br>
                         <p style="font-size:17px;">logout</p>
                     </a>
@@ -86,7 +174,7 @@ if (!$user->loggedIn()) {
             </div>
 
             <div class="msg_icon" onclick="toggleNotifi()">
-                <img src="img/ring.png" alt="">
+                <img src="../img/ring.png" alt="">
                 <span id="msg_count"></span>
 
             </div>
@@ -98,11 +186,11 @@ if (!$user->loggedIn()) {
         </header>
 
 
-        <main>
+        <!-- <main> -->
 
-            <center>
+            <center style="padding-top:10%;">
                 <br><br>
-                <img src="img/profile_setting.svg" style="width:40%; border-radius: 20px; margin-top:-4%;">
+                <img src="../img/profile_setting.svg" style="width:40%; border-radius: 20px; margin-top:-4%;">
                 <section class="contact" id="contact">
                     <div class="max-width">
 
@@ -182,7 +270,7 @@ if (!$user->loggedIn()) {
 
 
     </div>
-    </main>
+    <!-- </main> -->
     <script>
     //---------------------------------------------------------------------
 
@@ -217,9 +305,9 @@ if (!$user->loggedIn()) {
     </script>
 
     </div>
-    <script src="js/select.js"></script>
-    <script src="js/stat.js"></script>
-    <script src="js/js_notification.js"></script>
+    <script src="../js/select.js"></script>
+    <!-- <script src="../js/stat.js"></script> -->
+    <script src="../js/js_notification.js"></script>
 </body>
 
 </html>

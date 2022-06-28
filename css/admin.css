@@ -105,7 +105,7 @@ header {
   background: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2.5rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   position: fixed;
   left: 250px;
@@ -343,7 +343,7 @@ tr td:last-child {
   }
   .main-content header {
     width: calc(100% - 70px);
-    left: 70px;
+    left: 12%;
   }
 }
 

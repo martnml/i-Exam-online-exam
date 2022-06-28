@@ -1,8 +1,8 @@
 <?php
 include_once '../../config/Database.php';
-include_once '../class/User.php';
+include_once '../../class/User.php';
 include_once '../../class/Exam.php';
-include_once '../../../../fact.php';
+include_once '../../fact.php';
 
 $database = new Database();
 $db = $database->getConnection();
@@ -11,7 +11,7 @@ $user = new User($db);
 
 
 if (!$user->loggedIn()) {
-    header("Location: login.php");
+    header("Location: ../../login.php");
 }
 
 
@@ -125,7 +125,7 @@ $_SESSION['the_user']=$_SESSION['userid'];
                 <input type="search" placeholder="SEARCH" />
             </div> -->
             <div class="user-wrapper">
-                <a href="profile.php"><img src="<?php echo $_SESSION['img']; ?>" width="40px" height="40px" alt=""></a>
+                <a href="../profile.php"><img src="<?php echo $_SESSION['img']; ?>" width="40px" height="40px" alt=""></a>
                 <div>
                     <h4> <?php echo $_SESSION['name']; ?> </h4>
                     <small> <?php echo $_SESSION['role']; ?> </small>
@@ -262,8 +262,8 @@ $_SESSION['the_user']=$_SESSION['userid'];
 
         </main>
 
-        <script src="js/stat.js"></script>
-        <script src="js/js_notification.js"></script>
+    <script src="../../js/stat.js"></script>
+    <script src="../../js/js_notification.js"></script>
 </body>
 
 </html>

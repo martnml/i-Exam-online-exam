@@ -1,7 +1,7 @@
 <?php
-include_once 'config/Database.php';
-include_once 'class/User.php';
-include_once 'class/Exam.php';
+include_once '../../config/Database.php';
+include_once '../../class/User.php';
+include_once '../../class/Exam.php';
 include_once '../../fact.php';
 
 $database = new Database();
@@ -11,7 +11,7 @@ $user = new User($db);
 $exam = new Exam($db);
 
 if (!$user->loggedIn()) {
-    header("Location: login.php");
+    header("Location: ../../login.php");
 }
 
 
@@ -68,7 +68,7 @@ $_SESSION['the_user']=$_SESSION['userid'];
                 </li>
                 <br>
                 <li>
-                    <a href="contact.php?id_user=9">
+                    <a href="../contact.php?id_user=9">
 
                         <p style="font-size:17px;">contact admin</p>
                     </a>
@@ -97,7 +97,7 @@ $_SESSION['the_user']=$_SESSION['userid'];
                 <input type="search" placeholder="SEARCH" />
             </div> -->
             <div class="user-wrapper">
-                <a href="profile.php"><img src="<?php echo $_SESSION['img']; ?>" width="40px" height="40px" alt=""></a>
+                <a href="../profile.php"><img src="<?php echo $_SESSION['img']; ?>" width="40px" height="40px" alt=""></a>
                 <div>
                     <h4> <?php echo $_SESSION['name']; ?> </h4>
                     <small> <?php echo $_SESSION['role']; ?> </small>
@@ -105,7 +105,7 @@ $_SESSION['the_user']=$_SESSION['userid'];
             </div>
 
             <div class="msg_icon" onclick="toggleNotifi()">
-                <img src="img/ring.png" alt="">
+                <img src="../img/ring.png" alt="">
                 <span id="msg_count"></span>
 
             </div>
@@ -116,7 +116,7 @@ $_SESSION['the_user']=$_SESSION['userid'];
             </div>
         </header>
 
-        <main>
+        <!-- <main> -->
             <div class="cards">
 
                 <!-- 
@@ -173,10 +173,10 @@ $_SESSION['the_user']=$_SESSION['userid'];
 
 
     </div>
-    </main>
+    <!-- </main> -->
 
-    <script src="js/stat.js"></script>
-    <script src="js/js_notification.js"></script>
+    <script src="../../js/stat.js"></script>
+    <script src="../../js/js_notification.js"></script>
 </body>
 
 </html>

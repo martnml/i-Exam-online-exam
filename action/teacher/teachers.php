@@ -60,7 +60,7 @@
                 <input type="search" placeholder="SEARCH" />
             </div> -->
             <div class="user-wrapper">
-               <a href="profile.php"><img src="img/setting.png" width="40px" height="40px" alt=""></a>
+               <a href="../profile.php"><img src="img/setting.png" width="40px" height="40px" alt=""></a>
                 <div>
                     <h4>Admin</h4>
                     <small>abdelkader ali</small>
