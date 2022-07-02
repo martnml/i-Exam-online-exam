@@ -24,7 +24,12 @@
     </div>
     <nav class="navbar" style="background-color:rgb(50, 51, 53); opacity:80%;">
         <div class="max-width">
-            <div class="logo"><a href="#">i-<span>exam</span></a></div>
+            <div class="logo">
+            
+            <img src="img/logo.png" style="width:30%; padding:0px; margin:0px; opacity:100;" >
+            <a href="#">
+            
+            i-<span>exam</span></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
@@ -59,6 +64,7 @@
                     <img src="img/univ.jpeg" alt="">
                 </div>
                 <div class="column right">
+
                     <div class="text">Univ Istamboli <span class="typing-2"></span></div>
                     <p>made for university of Istamboli Mascara
                         <br><br><b>my phone number:</b>+213557662824
