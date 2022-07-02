@@ -62,6 +62,8 @@ if (!empty($_POST["login"]) && !empty($_POST["email"]) && !empty($_POST["passwor
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tag.css" />
     <title>Login</title>
 </head>
 
@@ -69,6 +71,23 @@ if (!empty($_POST["login"]) && !empty($_POST["email"]) && !empty($_POST["passwor
 
 
     <div class="container sign-up-mode">
+
+    <nav class="navbar" style="background-color:rgb(50, 51, 53); opacity:80%;">
+        <div class="max-width">
+            <div class="logo"><a href="#">i-<span>exam</span></a></div>
+            <ul class="menu">
+                <li><a href="index.php" class="menu-btn">Home</a></li>
+                <li><a href="index.php#about" class="menu-btn">About</a></li>
+                <li><a href="login.php" class="menu-btn">login</a></li>
+                <li><a href="sign.php" class="menu-btn">Sign up</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+
         <div class="forms-container">
             <div class="signin-signup">
 
