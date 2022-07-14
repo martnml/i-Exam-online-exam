@@ -108,8 +108,8 @@ header {
   padding: 1rem 2.5rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   position: fixed;
-  left: 250px;
-  width: calc(100% - 250px);
+  left: 20%;
+  width: calc(80%);
   top: 0;
   z-index: 100;
   transition: left 300ms;
@@ -166,7 +166,7 @@ header label span {
 }
 
 main {
-  margin: 85px;
+  margin: 2%;
   padding: 10% 2%;
   background: #f1f5f9;
   min-height: calc(100vh - 90px);
@@ -215,7 +215,7 @@ main {
 }
 
 .card {
-  background: #fff;
+  background: #e7ebf9;
 }
 
 .card-header {
@@ -343,7 +343,7 @@ tr td:last-child {
   }
   .main-content header {
     width: calc(100% - 70px);
-    left: 12%;
+    left: 14%;
   }
 }
 
@@ -461,7 +461,7 @@ option {
   padding: 4px;
   /* width: 200px; */
   height: 40px;
-  border: 2px solid #2ecc71;
+  border: 2px solid #ff4546;
   outline: none;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -469,7 +469,7 @@ option {
   text-align: center;
   background: none;
   margin: 10px auto;
-  color: #2ecc71;
+  color: #fd6c6c;
   border-radius: 7px;
   transition: 0.25s;
 }
@@ -569,20 +569,20 @@ textarea {
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: #00bf8f;
-  border: 2px solid #00bf8f;
+  background: #ff4546;
+  border: 2px solid #ff4546;
   transition: all 0.3s ease;
 }
 .right .form .button-area button:hover {
   /* color: #0069bf;
   border: 2px solid #0069bf; */
-  color: #00bf8f;
+  color: #ff4546;
   background: none;
 }
 
 .error_msg {
   background: #eec9c9;
-  color: #ff2600;
+  color: #ff4546;
   padding: 10px;
   width: fit-content;
   border-radius: 5px;

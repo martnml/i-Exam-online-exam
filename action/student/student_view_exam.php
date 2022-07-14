@@ -68,7 +68,7 @@ $_SESSION['the_user']=$_SESSION['userid'];
                 </li>
                 <br>
                 <li>
-                    <a href="contact.php?id_user=9">
+                    <a href="../contact.php?id_user=9">
 
                         <p style="font-size:17px;">contact admin</p>
                     </a>
@@ -88,7 +88,7 @@ $_SESSION['the_user']=$_SESSION['userid'];
         <header>
             <h2>
                 <label for="nav-toggle">
-
+                <!-- <img src="../../img/logo.png"> -->
                 </label> I-<font style="color:#ff4546;">Exam</font>
             </h2>
 
@@ -97,7 +97,7 @@ $_SESSION['the_user']=$_SESSION['userid'];
                 <input type="search" placeholder="SEARCH" />
             </div> -->
             <div class="user-wrapper">
-                <a href="../profile.php"><img src="<?php echo $_SESSION['img']; ?>" width="40px" height="40px" alt=""></a>
+                <a href="../profile.php"><img src="<?php echo "../../".$_SESSION['img']; ?>" width="40px" height="40px" alt=""></a>
                 <div>
                     <h4> <?php echo $_SESSION['name']; ?> </h4>
                     <small> <?php echo $_SESSION['role']; ?> </small>
@@ -105,7 +105,7 @@ $_SESSION['the_user']=$_SESSION['userid'];
             </div>
 
             <div class="msg_icon" onclick="toggleNotifi()">
-                <img src="img/ring.png" alt="">
+                <img src="../../img/ring.png" alt="">
                 <span id="msg_count"></span>
 
             </div>

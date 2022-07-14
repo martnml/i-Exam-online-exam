@@ -339,7 +339,7 @@ class Exam {
 			
 			$rows[] = $enroll['mobile'];								
 			$rows[] = $examMessage;	
-			$rows[] = '<a href="contact.php?id_user='.$enroll["theuserid"].'" type="button" class="btn btn-warning btn-xs update">contact</a>';		
+			$rows[] = '<a href="../contact.php?id_user='.$enroll["theuserid"].'" type="button" class="btn btn-warning btn-xs update">contact</a>';		
 			$records[] = $rows;
 		}
 		

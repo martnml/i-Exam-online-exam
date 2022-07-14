@@ -90,7 +90,7 @@ include('../../fact.php');
                 </li>
 
                 <li>
-                    <a href="contact.php?id_user=9">
+                    <a href="../contact.php?id_user=9">
                         </br>
                         <p style="font-size:17px;">contact admin</p>
                     </a>
@@ -129,7 +129,7 @@ include('../../fact.php');
             </div>
 
             <div class="msg_icon" onclick="toggleNotifi()">
-                <img src="img/ring.png" alt="">
+                <img src="../../img/ring.png" alt="">
                 <span id="msg_count"></span>
 
             </div>

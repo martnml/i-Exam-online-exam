@@ -72,7 +72,7 @@ $(document).ready(function () {
 //---------------------------------------------------------------------
 
 function get_fact(value) {
-  $.post("../../fact.php", { faculty: value }, function (data) {
+  $.post("fact.php", { faculty: value }, function (data) {
     var result =
       '<option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Departement</option>';
     $("#dep").html(result + data);
@@ -80,7 +80,7 @@ function get_fact(value) {
 }
 
 function get_depart(value) {
-  $.post("../../fact.php", { dep: value }, function (data) {
+  $.post("fact.php", { dep: value }, function (data) {
     var result_1 =
       '<option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1st Specility</option>';
     var result_2 =
@@ -95,7 +95,7 @@ function get_depart(value) {
 }
 
 function get_spec2(value) {
-  $.post("../../fact.php", { spec1: value }, function (data) {
+  $.post("fact.php", { spec1: value }, function (data) {
     var result_1 =
       '<option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2nd Specility "optional"</option>';
 
@@ -112,7 +112,7 @@ function get_spec2(value) {
 }
 
 function get_spec3(value) {
-  $.post("../../fact.php", { spec2: value }, function (data) {
+  $.post("fact.php", { spec2: value }, function (data) {
     var result_1 =
       '<option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3nd Specility "optional"</option>';
      
@@ -147,7 +147,7 @@ function get_spec3(value) {
 }
 
 function get_depart_admin(value) {
-  $.post("../../fact.php", { dep: value }, function (data) {
+  $.post("fact.php", { dep: value }, function (data) {
     var result_1 =
       '<option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1st Specility</option>';
 
@@ -157,7 +157,7 @@ function get_depart_admin(value) {
 
 //---------------------------------------teacher----------------------------
 function get_fact_2(value) {
-  $.post("../../fact.php", { faculty: value }, function (data) {
+  $.post("fact.php", { faculty: value }, function (data) {
     var result =
       '<option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Departement</option>';
     $("#dep_2").html(result + data);
@@ -165,7 +165,7 @@ function get_fact_2(value) {
 }
 
 function get_depart_2(value) {
-  $.post("../../fact.php", { dep: value }, function (data) {
+  $.post("fact.php", { dep: value }, function (data) {
     var result_1 =
       '<option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1st Specility</option>';
     var result_2 =
@@ -179,7 +179,7 @@ function get_depart_2(value) {
 }
 
 function get_spec_2(value) {
-  $.post("../../fact.php", { spec1: value }, function (data) {
+  $.post("fact.php", { spec1: value }, function (data) {
     var result_1 =
       '<option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2nd Specility "optional"</option>';
 

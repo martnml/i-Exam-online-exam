@@ -29,7 +29,7 @@ $result=mysqli_query($conn,$sql_faculty);
     <div class="container sign-up-mode">
         <div class="forms-container">
             <div class="signin-signup">
-                <form action="sign_up.php" method="POST" class="sign-in-form">
+                <form action="action/teacher/signup-check-teacher.php" method="POST" class="sign-in-form">
                     <h2 class="title">Sign As teacher</h2>
 
                     <div class="input-field">
@@ -117,7 +117,7 @@ $result=mysqli_query($conn,$sql_faculty);
 
 
 
-                <form method="POST" action="signup-check.php" class="sign-up-form">
+                <form method="POST" action="action/student/signup-check-student.php" class="sign-up-form">
 
                     <h2 class="title">Sign as Student</h2>
 
@@ -194,7 +194,7 @@ $result=mysqli_query($conn,$sql_faculty);
                         AS a teacher !
                     </button>
                 </div>
-                <img src="img/my_app.svg" class="image" alt="" />
+                <img src="img/login.svg" class="image" alt="" />
             </div>
         </div>
     </div>

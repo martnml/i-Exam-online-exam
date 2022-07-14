@@ -47,7 +47,7 @@
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Welcome to</div>
-                <div class="text-2">i- <font style="color:#ff4546;">Exam </font>
+                <div class="text-2">i<font style="color:#ff4546;">Exam </font>
                 </div>
                 <div class="text-3">where there is <span class="typing"></span></div>
                 <a href="login.php">login now</a>

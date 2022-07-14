@@ -199,7 +199,7 @@ $spec2=mysqli_fetch_assoc($result2);
 			$rows[] = '<button  type="button" name="view" id="'.$user["id"].'" class="btn btn-info btn-xs view"><span title="View Tasks">View Details</span></button>';	
 			// $rows[] = '<button type="button" name="update" id="'.$user["id"].'" class="btn btn-warning btn-xs update">Edit</button>';
 			$rows[] = '<button type="button" name="delete" id="'.$user["id"].'" class="btn btn-danger btn-xs delete">Delete</button>';
-            $rows[] = '<a href="contact.php?id_user='.$user["id"].'" type="button" class="btn btn-warning btn-xs update">contact</a>';
+            $rows[] = '<a href="../contact.php?id_user='.$user["id"].'" type="button" class="btn btn-warning btn-xs update">contact</a>';
 			$records[] = $rows;
 		}
 		

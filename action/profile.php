@@ -38,6 +38,7 @@ if (!$user->loggedIn()) {
     <link rel="stylesheet" href="../css/admin.css">
     <link rel="stylesheet" href="../css/notification.css">
     <link rel="stylesheet" href="../css/switch.css">
+    <link rel="stylesheet" href="../css/tag.css">
     <!-- <script src="../js/update.js"></script> -->
 </head>
 
@@ -157,7 +158,7 @@ else echo
         <header>
             <h2>
                 <label for="nav-toggle">
-
+<img src="../img/logo.png">
                 </label> I-<font style="color:#ff4546;">Exam</font>
             </h2>
 
@@ -166,7 +167,7 @@ else echo
                 <input type="search" placeholder="SEARCH" />
             </div> -->
             <div class="user-wrapper">
-                <a href="profile.php"><img src="<?php echo $_SESSION['img']; ?>" width="40px" height="40px" alt=""></a>
+                <a href="profile.php"><img src="../<?php echo $_SESSION['img']; ?>" width="40px" height="40px" alt=""></a>
                 <div>
                     <h4> <?php echo $_SESSION['name']; ?> </h4>
                     <small> <?php echo $_SESSION['role']; ?> </small>

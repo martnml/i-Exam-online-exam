@@ -1,7 +1,15 @@
+
+<?php
+
+
+{   ?>
+
+
+
 <footer>
 
 
-<img src="img/portfolio-3.png" style="width:10%; padding :0px; margin:0px;" >
+<img src="img/logo-footer.png" style="width:10%; padding :0px; margin:0px;" >
 
         
         <span>
@@ -20,3 +28,5 @@
         <span class="far fa-copyright"></span> 
         2021 All rights reserved.</span>
 </footer>
+
+<?php  }?>

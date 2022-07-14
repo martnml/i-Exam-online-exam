@@ -1,5 +1,21 @@
 <?php
-include "action/login_header.php";
+
+include_once '../config/Database.php';
+include_once '../class/User.php';
+include_once '../fact.php';
+
+
+$database = new Database();
+$db = $database->getConnection();
+
+$user = new User($db);
+
+if (!$user->loggedIn()) {
+    header("Location: ../login.php");
+}
+
+
+
 //add
 if(isset($_GET['id_user'])){
 $id_user=$_GET['id_user'];
@@ -14,7 +30,7 @@ $_SESSION['sender_id']=$_GET['id_user'];
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php  include('inc/header.php'); ?>
+    <?php  include('../inc/header.php'); ?>
     <title>contact</title>
 </head>
 
@@ -31,7 +47,7 @@ $_SESSION['sender_id']=$_GET['id_user'];
                 <?php include('../inc/links.php')?>
 
                 <li>
-                    <a href="../../logout.php" onclick="return confirm('Are You sure you want to logout ?');">
+                    <a href="../logout.php" onclick="return confirm('Are You sure you want to logout ?');">
                         </br>
                         <p style="font-size:17px;">logout</p>
                     </a>
@@ -67,7 +83,7 @@ $_SESSION['sender_id']=$_GET['id_user'];
             </div>
 
             <div class="msg_icon" onclick="toggleNotifi()">
-                <img src="img/ring.png" alt="">
+                <img src="../img/ring.png" alt="">
                 <span id="msg_count"></span>
 
             </div>
@@ -83,7 +99,7 @@ $_SESSION['sender_id']=$_GET['id_user'];
 
             <center>
                 <br><br>
-                <img src="img/tenor.gif" style="width:25%; border-radius: 20px; margin-top:-4%;">
+                <img src="../img/tenor.gif" style="width:25%; border-radius: 20px; margin-top:-4%;">
                 <section class="contact" id="contact">
                     <div class="max-width">
 
@@ -164,11 +180,11 @@ $_SESSION['sender_id']=$_GET['id_user'];
     </main>
     </div>
 
-    <?php  include"inc/footer.php"; ?>
+    <?php  include "../inc/footer.php"; ?>
     
-    <script src="js/select.js"></script>
+    <script src="../js/select.js"></script>
     <script src="../js/stat.js"></script>
-    <script src="js/js_notification.js"></script>
+    <script src="../js/js_notification.js"></script>
 </body>
 
 </html>

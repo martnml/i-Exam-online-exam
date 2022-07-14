@@ -125,7 +125,7 @@ $_SESSION['the_user']=$_SESSION['userid'];
                 <input type="search" placeholder="SEARCH" />
             </div> -->
             <div class="user-wrapper">
-                <a href="../profile.php"><img src="<?php echo $_SESSION['img']; ?>" width="40px" height="40px" alt=""></a>
+                <a href="../profile.php"><img src="../../<?php echo $_SESSION['img']; ?>" width="40px" height="40px" alt=""></a>
                 <div>
                     <h4> <?php echo $_SESSION['name']; ?> </h4>
                     <small> <?php echo $_SESSION['role']; ?> </small>
@@ -158,10 +158,10 @@ $_SESSION['the_user']=$_SESSION['userid'];
 
 
                 <div class="col-md-4">
-                    <br />
+                    
                     <div align="center">
                         <div id="examTimer" data-timer="<?php echo $remainingMinutes; ?>"
-                            style="max-width:400px; width: 100%; height: 200px;"></div>
+                            style="max-width:400px; width: 100%; height: 300px;"></div>
                     </div>
                     <br />
                     <div id="user_details_area"></div>

@@ -169,7 +169,7 @@ if (!empty($_POST["login"]) && !empty($_POST["email"]) && !empty($_POST["passwor
                     </p>
 
                 </div>
-                <img src="img/security.svg" class="image" alt="" />
+                <img src="img/safe.svg" class="image" alt="" />
             </div>
             <div class="panel right-panel">
                 <div class="content">
@@ -180,7 +180,7 @@ if (!empty($_POST["login"]) && !empty($_POST["email"]) && !empty($_POST["passwor
                     </p>
 
                 </div>
-                <img src="img/security.svg" class="image" alt="" />
+                <img src="img/safe.svg" class="image" alt="" />
             </div>
         </div>
     </div>

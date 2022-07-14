@@ -69,7 +69,7 @@ $num_count= mysqli_num_rows($result_count);
                 </li>
 
                 <li>
-                    <a href="contact.php?id_user=9">
+                    <a href="../contact.php?id_user=9">
                         </br>
                         <p style="font-size:17px;">contact admin</p>
                     </a>
@@ -107,7 +107,7 @@ $num_count= mysqli_num_rows($result_count);
             </div>
 
             <div class="msg_icon" onclick="toggleNotifi()">
-                <img src="img/ring.png" alt="">
+                <img src="../../img/ring.png" alt="">
                 <span id="msg_count"></span>
 
             </div>

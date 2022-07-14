@@ -10,7 +10,7 @@ $db = $database->getConnection();
 $user = new User($db);
 
 if (!$user->loggedIn()) {
-    header("Location: login.php");
+    header("Location: ../../login.php");
 }
 
 
@@ -37,16 +37,16 @@ $num_count= mysqli_num_rows($result_count);
 <html lang="en">
 
 <head>
-    <?php include('inc/header.php');?>
+    <?php include('../../inc/header.php');?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <title>exams</title>
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link rel="stylesheet" href="css/admin.css">
-    <link rel="stylesheet" href="css/notification.css">
-    <link rel="stylesheet" href="css/branches.css">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <link rel="stylesheet" href="../../css/notification.css">
+    <link rel="stylesheet" href="../../css/branches.css">
 
 </head>
 
@@ -61,7 +61,7 @@ $num_count= mysqli_num_rows($result_count);
         <div class="sidebar-menu">
             <ul>
                 <li>
-                    <a href="admin_students.php"><span class="las la-users">
+                    <a href="../admin_students.php"><span class="las la-users">
 
                             <p style="font-size:17px;">students</p>
                         </span>
@@ -69,21 +69,21 @@ $num_count= mysqli_num_rows($result_count);
                 </li>
 
                 <li>
-                    <a href="admin_teachers.php"><span class="las la-user"></span>
+                    <a href="../admin_teachers.php"><span class="las la-user"></span>
                         </br>
                         <p style="font-size:17px;">teachers</p></span>
 
                     </a>
                 </li>
                 <li>
-                    <a href="../branches/branches_faculty.php" class="active">
+                    <a href="branches_faculty.php" class="active">
 
                         <p style="font-size:17px;">branches</p>
                         </span>
                     </a>
                 </li>
                 <li>
-                    <a href="admin_exams.php">
+                    <a href="../admin_exams.php">
 
                         <p style="font-size:17px;">exams</p>
                     </a>
@@ -122,7 +122,7 @@ $num_count= mysqli_num_rows($result_count);
             </div>
 
             <div class="msg_icon" onclick="toggleNotifi()">
-                <img src="img/ring.png" alt="">
+                <img src="../../img/ring.png" alt="">
                 <span id="msg_count"></span>
 
             </div>
@@ -185,7 +185,7 @@ $num_count= mysqli_num_rows($result_count);
 
 
             <div class="card">
-                <div class="card-image" style="background-image: url('img/speciality.png');
+                <div class="card-image" style="background-image: url('../../img/speciality.png');
                                                 background-size: 130%;">
                     <h2 class="card-heading" style="color:#04c273;">
                         <!-- Creat a new -->
@@ -204,7 +204,7 @@ $num_count= mysqli_num_rows($result_count);
                     <a href="#">
                         <?php echo '('.$row_spec['option_spec'].')&nbsp'.$row_spec['name_specility']; ?>
                     </a>&nbsp;
-                    <img src="img/delete_sign.png " style="width:5%;display:inline;" type="button" name="delete"
+                    <img src="../../img/delete_sign.png " style="width:5%;display:inline;" type="button" name="delete"
                         id="<?php echo $row_spec['id_specility'];?>" onclick="delete_spec(this.id)">
 
 
@@ -252,9 +252,9 @@ $num_count= mysqli_num_rows($result_count);
     </main>
 
     </div>
-    <script src="js/select.js"></script>
-    <script src="js/stat.js"></script>
-    <script src="js/js_notification.js"></script>
+    <script src="../../js/select.js"></script>
+    <script src="../../js/stat.js"></script>
+    <script src="../../js/js_notification.js"></script>
 
 
 </body>

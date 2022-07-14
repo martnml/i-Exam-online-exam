@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : ven. 11 fév. 2022 à 18:03
+-- Généré le : jeu. 14 juil. 2022 à 15:09
 -- Version du serveur :  10.4.11-MariaDB
 -- Version de PHP : 7.4.5
 
@@ -40,8 +40,8 @@ CREATE TABLE `departement` (
 INSERT INTO `departement` (`id_faculty`, `id_departement`, `name_departement`) VALUES
 (1, 1, 'Computer science'),
 (1, 2, 'Mathematics'),
-(1, 3, 'Chimistry'),
-(1, 4, 'Physics');
+(3, 3, 'Chimistry'),
+(3, 4, 'Physics');
 
 -- --------------------------------------------------------
 
@@ -71,10 +71,9 @@ CREATE TABLE `exams` (
 
 INSERT INTO `exams` (`id`, `user_id`, `exam_title`, `exam_datetime`, `endtime`, `id_specility`, `duration`, `total_question`, `marks_per_right_answer`, `marks_per_wrong_answer`, `created_on`, `status`, `exam_code`) VALUES
 (1, 1, 'PHP Test', '2022-01-20 23:31:07', '2022-02-26 03:09:00', 1, '1', 2, '1', '1', '2021-12-09 12:51:11', 'Created', ''),
-(3, 1, 'JavaScript Test', '2021-12-25 15:03:00', '2022-01-11 14:37:00', 1, '2', 1, '1', '1', '2021-12-08 08:26:41', 'Created', ''),
-(55, 1, 'aa', '0000-00-00 00:00:00', '2022-02-09 17:15:00', 5, '1', 1, '1.5', '1.50', '2022-02-09 12:39:16', 'Created', ''),
+(3, 1, 'JavaScript Test', '2021-12-25 15:03:00', '2022-07-30 14:37:00', 2, '2', 1, '1', '1', '2021-12-08 08:26:41', 'Created', ''),
 (57, 1, 'first exams gla', '0000-00-00 00:00:00', '2022-02-13 18:16:00', 1, '1', 3, '5', '0.5', '2022-02-09 15:12:00', 'Created', ''),
-(58, 1, 'math1', '0000-00-00 00:00:00', '2022-02-24 10:11:00', 1, '2', 2, '1', '0.5', '2022-02-10 10:57:21', 'Created', '');
+(58, 1, 'math1', '0000-00-00 00:00:00', '2022-07-17 10:11:00', 2, '2', 2, '1', '0.5', '2022-02-10 10:57:21', 'Created', '');
 
 -- --------------------------------------------------------
 
@@ -98,7 +97,11 @@ INSERT INTO `exam_enroll` (`id`, `user_id`, `exam_id`, `attendance_status`) VALU
 (43, 4, 57, 'Absent'),
 (44, 4, 57, 'Absent'),
 (45, 47, 58, 'Absent'),
-(46, 47, 58, 'Absent');
+(46, 47, 58, 'Absent'),
+(47, 3, 3, 'Absent'),
+(48, 3, 3, 'Absent'),
+(49, 3, 3, 'Absent'),
+(50, 3, 58, 'Absent');
 
 -- --------------------------------------------------------
 
@@ -130,10 +133,6 @@ INSERT INTO `exam_option` (`id`, `question_id`, `option`, `title`) VALUES
 (166, 46, 2, '<script>'),
 (167, 46, 3, '<p>'),
 (168, 46, 4, '<head>'),
-(173, 48, 1, 'a'),
-(174, 48, 2, 'a'),
-(175, 48, 3, 'a'),
-(176, 48, 4, 'a'),
 (177, 49, 1, 'a'),
 (178, 49, 2, 'b'),
 (179, 49, 3, 'c'),
@@ -175,7 +174,9 @@ CREATE TABLE `exam_process` (
 INSERT INTO `exam_process` (`id`, `userid`, `examid`, `start_time`) VALUES
 (49, 4, 1, '2022-02-08 23:38:07'),
 (50, 4, 57, '2022-02-09 15:16:03'),
-(51, 47, 58, '2022-02-10 11:07:57');
+(51, 47, 58, '2022-02-10 11:07:57'),
+(52, 3, 3, '2022-07-14 15:01:35'),
+(53, 3, 58, '2022-07-14 15:05:43');
 
 -- --------------------------------------------------------
 
@@ -198,7 +199,6 @@ INSERT INTO `exam_question` (`id`, `exam_id`, `question`, `answer`) VALUES
 (44, 1, 'what is the output of this code $i=1;  echo $i;', '1'),
 (45, 1, 'what is closest language when it comes to syntax?', '2'),
 (46, 3, 'html element we put in javascript code', '2'),
-(48, 55, 'a', '2'),
 (49, 57, 'quelle est la reponse ', '1'),
 (50, 57, 'quelee est la reponse de sqt 2', '2'),
 (51, 57, 'quelle est la reponse 3', '1'),
@@ -231,7 +231,10 @@ INSERT INTO `exam_question_answer` (`id`, `user_id`, `exam_id`, `question_id`, `
 (144, 4, 57, 50, '3', '0'),
 (145, 4, 57, 51, '2', '0'),
 (146, 47, 58, 52, '2', '1'),
-(147, 47, 58, 53, '1', '1');
+(147, 47, 58, 53, '1', '1'),
+(148, 3, 3, 46, '1', '-1'),
+(149, 3, 58, 52, '2', '1'),
+(150, 3, 58, 53, '1', '1');
 
 -- --------------------------------------------------------
 
@@ -303,12 +306,12 @@ INSERT INTO `specility` (`id_departement`, `id_specility`, `name_specility`, `op
 (1, 3, 'computer engeneering', 'L3'),
 (1, 4, 'ISI', 'M1'),
 (1, 5, 'ISI', 'M2'),
-(1, 7, 'RSD', 'M2'),
+(1, 7, 'NDS', 'M2'),
 (1, 8, 'SITW', 'M1'),
 (1, 9, 'SITW', 'M2'),
-(1, 11, 'machine learning', 'M2'),
+(1, 11, 'machine learning', 'M1'),
 (1, 12, 'machine learning', 'M2'),
-(1, 13, 'data science', 'M1'),
+(1, 13, 'Data science', 'M1'),
 (2, 15, 'Mathematics', 'L1'),
 (2, 16, 'Mathematics', 'L2'),
 (2, 18, 'Geometrics & Application', 'M1'),
@@ -357,7 +360,6 @@ CREATE TABLE `teacher` (
 INSERT INTO `teacher` (`id_teacher`, `id`, `id_spec1`, `id_spec2`) VALUES
 (1, 1, 1, 5),
 (7, 47, 1, 5),
-(8, 48, 1, 5),
 (9, 49, 1, 5);
 
 -- --------------------------------------------------------
@@ -385,13 +387,12 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `first_name`, `last_name`, `gender`, `email`, `password`, `mobile`, `address`, `created`, `role`, `img_src`) VALUES
-(1, 'sidou', 'mohamed', 'Male', 'teacher@yahoo.com', '202cb962ac59075b964b07152d234b70', '5555555555', '08 rue mascara ville', '2021-12-20 16:23:32', 'teacher', 'img/teacher_male.png'),
-(3, 'abdelkader', 'ahmed', 'Male', 'student@yahoo.com', '202cb962ac59075b964b07152d234b70', '1234555789', 'aaaaaaa', '2020-11-28 22:45:58', 'student', 'img/student.png'),
-(4, 'Ali', 'mohamed', 'Male', 'emil@yahoo.com', '202cb962ac59075b964b07152d234b70', '123456789', 'aaaaaaaaaaaaa', '2020-11-28 22:45:58', 'student', 'img/male_avatar.svg'),
+(1, 'sidou', 'mohamed', 'Male', 'teacher@yahoo.com', '202cb962ac59075b964b07152d234b70', '5555555555', '08 rue mascara ville', '2021-12-20 16:23:32', 'teacher', '../../img/teacher_male.png'),
+(3, 'abdelkader', 'ahmed', 'Male', 'student@yahoo.com', '202cb962ac59075b964b07152d234b70', '1234555789', 'aaaaaaa', '2020-11-28 22:45:58', 'student', 'img/male_avatar.svg'),
+(4, 'emil', 'martin', 'Male', 'emil@yahoo.com', '202cb962ac59075b964b07152d234b70', '123456789', 'aaaaaaaaaaaaa', '2020-11-28 22:45:58', 'student', 'img/male_avatar.svg'),
 (9, 'ADMIN', 'ADMIN', 'Male', 'admin@yahoo.com', '202cb962ac59075b964b07152d234b70', '05554488977', '', '2022-01-06 22:18:15', 'admin', 'img/setting.png'),
-(47, 'noor ', 'el houda', 'Male', 'nour@yahoo.com', '202cb962ac59075b964b07152d234b70', '111111111111', 'aaaaaaaaaaa', '2022-02-09 15:08:23', 'student', 'img/female_avatar.svg'),
-(48, 'mohamed', 'mohamed', '', 'moha@yahoo.com', '123', '111111111111', 'aaaaaaaaaaa', '2022-02-09 15:08:38', 'teacher', 'img/student.png'),
-(49, 'mohamed', 'mohamed', '', 'aaaaaaaaa@yahoo.com', '123', '111111111111', 'aaaaaaaaaaa', '2022-02-09 15:08:56', 'teacher', 'img/student.png');
+(47, 'noor ', 'el houda', 'Female', 'nour@yahoo.com', '202cb962ac59075b964b07152d234b70', '111111111111', 'aaaaaaaaaaa', '2022-02-09 15:08:23', 'student', 'img/female_avatar.svg'),
+(49, 'mohamed', 'mohamed', 'Male', 'mohamed@yahoo.com', '123', '111111111111', 'aaaaaaaaaaa', '2022-02-09 15:08:56', 'teacher', 'img/male_avatar.svg');
 
 --
 -- Index pour les tables déchargées
@@ -514,7 +515,7 @@ ALTER TABLE `exams`
 -- AUTO_INCREMENT pour la table `exam_enroll`
 --
 ALTER TABLE `exam_enroll`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT pour la table `exam_option`
@@ -526,7 +527,7 @@ ALTER TABLE `exam_option`
 -- AUTO_INCREMENT pour la table `exam_process`
 --
 ALTER TABLE `exam_process`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- AUTO_INCREMENT pour la table `exam_question`
@@ -538,13 +539,13 @@ ALTER TABLE `exam_question`
 -- AUTO_INCREMENT pour la table `exam_question_answer`
 --
 ALTER TABLE `exam_question_answer`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=148;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=151;
 
 --
 -- AUTO_INCREMENT pour la table `faculty`
 --
 ALTER TABLE `faculty`
-  MODIFY `id_faculty` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id_faculty` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT pour la table `message`
