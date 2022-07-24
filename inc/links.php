@@ -32,7 +32,7 @@ echo'
                 </li>';
 
 else if($_SESSION['role']=='student')  
-  echo' <ul>
+  echo' 
       <li>
           <a href="student_enroll_exam.php" >
               <p style="font-size:17px;">Exams</p>

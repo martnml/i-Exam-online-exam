@@ -24,7 +24,7 @@ $num_count= mysqli_num_rows($result_count);
 <body>
 
     <input type="checkbox" id="nav-toggle">
-    <img src="img/logout.jpeg" style="width:30px; border-radius:18px">
+    <img src="../../img/logout.jpeg" style="width:30px; border-radius:18px">
     <div class="sidebar" style="width:14%;">
         <div class="sidebar-brand">
             <h2><span class=""></span> <span>I-Exam</span></h2>
@@ -348,8 +348,8 @@ $num_count= mysqli_num_rows($result_count);
 
         </main>
 
-        <script src="js/stat.js"></script>
-        <script src="js/js_notification.js"></script>
+        <script src="../../js/stat.js"></script>
+        <script src="../../js/js_notification.js"></script>
 
 
         <script>

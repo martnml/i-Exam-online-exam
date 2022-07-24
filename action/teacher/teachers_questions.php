@@ -21,7 +21,7 @@ $num_count= mysqli_num_rows($result_count);
 <head>
     <?php include('../../inc/header.php'); ?>
     <title>teachers</title>
-    <script src="js/questions.js"></script>
+    <script src="../../js/questions.js"></script>
   
 
 
@@ -301,15 +301,15 @@ $num_count= mysqli_num_rows($result_count);
                     </div>
 
                 </div>
-                <?php include('inc/footer.php'); ?>
+                <?php include('../../inc/footer.php'); ?>
 
 
 
         </main>
 
     </div>
-    <script src="js/stat.js"></script>
-    <script src="js/js_notification.js"></script>
+    <script src="../../js/stat.js"></script>
+    <script src="../../js/js_notification.js"></script>
 </body>
 
 </html>

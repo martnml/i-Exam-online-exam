@@ -136,9 +136,10 @@ include "../login_header.php";
             </div>
             <!--Tabla-->
 
-
+            <!-- <img src="../../img/team.svg" style="width:50%;"  alt="" /> -->
             <br>
             <h4>
+                
                 Students List
             </h4>
             <br>

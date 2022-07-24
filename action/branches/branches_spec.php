@@ -61,7 +61,7 @@ $num_count= mysqli_num_rows($result_count);
         <div class="sidebar-menu">
             <ul>
                 <li>
-                    <a href="../admin_students.php"><span class="las la-users">
+                    <a href="../admin/admin_students.php"><span class="las la-users">
 
                             <p style="font-size:17px;">students</p>
                         </span>
@@ -69,7 +69,7 @@ $num_count= mysqli_num_rows($result_count);
                 </li>
 
                 <li>
-                    <a href="../admin_teachers.php"><span class="las la-user"></span>
+                    <a href="../admin/admin_teachers.php"><span class="las la-user"></span>
                         </br>
                         <p style="font-size:17px;">teachers</p></span>
 
@@ -83,7 +83,7 @@ $num_count= mysqli_num_rows($result_count);
                     </a>
                 </li>
                 <li>
-                    <a href="../admin_exams.php">
+                    <a href="../admin/admin_exams.php">
 
                         <p style="font-size:17px;">exams</p>
                     </a>

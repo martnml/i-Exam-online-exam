@@ -96,7 +96,7 @@ $_SESSION['the_user']=$_SESSION['userid'];
                 </li>
                 <br>
                 <li>
-                    <a href="contact.php?id_user=9">
+                    <a href="../contact.php?id_user=9">
 
                         <p style="font-size:17px;">contact admin</p>
                     </a>
@@ -148,7 +148,7 @@ $_SESSION['the_user']=$_SESSION['userid'];
 
             <!--Tabla-->
 
-            <br>
+</br>
             <div id="processExamId" data-exam_id="<?php echo $examDetails['id']; ?>">
                 <?php
                 if ($currentTime < $examEndTime) {
