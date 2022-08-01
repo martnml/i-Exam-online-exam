@@ -1,10 +1,11 @@
 <?php
-include_once '../../login_header.php';
+include_once '../login_header.php';
 
 $id_user=$_SESSION['userid'];
 $sql_count="SELECT * FROM message  WHERE (message.reciever_id='$id_user' AND message.vue='0' )";
 $result_count=mysqli_query($conn, $sql_count);
 $num_count= mysqli_num_rows($result_count);
+
 
 
 ?>
@@ -40,13 +41,7 @@ $num_count= mysqli_num_rows($result_count);
                     </a>
                 </li>
 
-                <li>
-                    <a href="#">
-                        </br>
-                        <p style="font-size:15px;margin-left:25px;">exam questions</p>
-                    </a>
-
-                </li>
+              
                 <li>
                     <a href="#" class="active">
                         </br>
@@ -56,15 +51,7 @@ $num_count= mysqli_num_rows($result_count);
                 </li>
 
                 <li>
-                    <a href="#">
-                        </br>
-                        <p style="font-size:15px;margin-left:40px;">his\her result</p>
-                    </a>
-
-                </li>
-
-                <li>
-                    <a href="../contact.php?id_user=9">
+                    <a href="teacher_contact.php?id_user=9">
                         </br>
                         <p style="font-size:17px;">contact admin</p>
                     </a>

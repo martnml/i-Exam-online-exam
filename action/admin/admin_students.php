@@ -80,7 +80,7 @@ include "../login_header.php";
                 <input type="search" placeholder="SEARCH" />
             </div> -->
             <div class="user-wrapper">
-                <a href="../profile.php"><img src="../../img/setting.png" width="40px" height="40px" alt=""></a>
+                <a href="../profile.php"><img src="../../img/admin_avatar.svg" width="40px" height="40px" alt=""></a>
                 <div>
                     <h4> <?php echo $_SESSION['name']; ?> </h4>
                     <small> <?php echo $_SESSION['role']; ?> </small>

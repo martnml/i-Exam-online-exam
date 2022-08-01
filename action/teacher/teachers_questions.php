@@ -52,24 +52,10 @@ $num_count= mysqli_num_rows($result_count);
                     </a>
 
                 </li>
-                <li>
-                    <a href="#">
-                        </br>
-                        <p style="font-size:15px;margin-left:25px;">students results</p>
-                    </a>
-
-                </li>
+                
 
                 <li>
-                    <a href="#">
-                        </br>
-                        <p style="font-size:15px;margin-left:40px;">his\her result</p>
-                    </a>
-
-                </li>
-
-                <li>
-                    <a href="../contact.php?id_user=9">
+                    <a href="teacher_contact.php?id_user=9">
                         </br>
                         <p style="font-size:17px;">contact admin</p>
                     </a>

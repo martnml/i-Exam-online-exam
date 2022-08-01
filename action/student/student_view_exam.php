@@ -61,21 +61,16 @@ $_SESSION['the_user']=$_SESSION['userid'];
                 </li>
                 <br>
 
+            
                 <li>
-                    <a href="#">
-                        <p style="font-size:17px;">Passing Exam & check result</p>
-                    </a>
-                </li>
-                <br>
-                <li>
-                    <a href="../contact.php?id_user=9">
+                    <a href="student_contact.php?id_user=9">
 
                         <p style="font-size:17px;">contact admin</p>
                     </a>
                 </li>
                 <br>
                 <li>
-                    <a href="../../logout.php">
+                <a href="../../logout.php" onclick="return confirm('Are You sure you want to logout ?');">
                         <p style="font-size:17px;">Logout</p>
                     </a>
                 </li>

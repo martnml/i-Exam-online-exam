@@ -27,22 +27,13 @@ include('../../fact.php');
 <html lang="en">
 
 <head>
-    <?php include('inc/header.php');?>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <?php include('../../inc/header.php');?>
+
     <title>teachers</title>
-    <link rel="stylesheet"
-        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link rel="stylesheet" href="css/admin.css">
-    <link rel="stylesheet" href="css/notification.css">
-    <link rel="stylesheet" href="css/switch.css">
-    <script src="js/jquery.dataTables.min.js"></script>
-    <script src="js/dataTables.bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/dataTables.bootstrap.min.css" />
+
     <link rel="stylesheet" href="css/TimeCircles.css" />
-    <script src="js/TimeCircles.js"></script>
-    <script src="js/user_exam.js"></script>
+    <script src="../../js/TimeCircles.js"></script>
+    <script src="../../js/user_exam.js"></script>
   
 
 </head>
@@ -65,32 +56,19 @@ include('../../fact.php');
                     </a>
                 </li>
 
-                <li>
-                    <a href="#">
-                        </br>
-                        <p style="font-size:15px;margin-left:25px;">exam questions</p>
-                    </a>
-
-                </li>
-                <li>
-                    <a href="#">
-                        </br>
-                        <p style="font-size:15px;margin-left:25px;">students results</p>
-                    </a>
-
-                </li>
+             
 
                 <li>
                     <a href="#" class="active">
                         </br>
                         <p style="font-size:15px;margin-left:40px;">
-                            <?php echo $row_user['first_name'].'&nbsp;'.$row_user['last_name'];?>&nbsp;&nbsp; result</p>
+                            <?php echo $row_user['first_name'].'&nbsp;'.$row_user['last_name'];?>&nbsp; Result</p>
                     </a>
 
                 </li>
 
                 <li>
-                    <a href="../contact.php?id_user=9">
+                    <a href="teacher_contact.php?id_user=9">
                         </br>
                         <p style="font-size:17px;">contact admin</p>
                     </a>
@@ -293,8 +271,8 @@ include('../../fact.php');
     </main>
 
     </div>
-    <script src="js/stat.js"></script>
-    <script src="js/js_notification.js"></script>
+    <script src="../../js/stat.js"></script>
+    <script src="../../js/js_notification.js"></script>
 </body>
 
 </html>

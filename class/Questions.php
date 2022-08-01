@@ -72,7 +72,7 @@ class Questions {
 			SELECT questions.id as question_id, questions.question, questions.answer, options.id as option_id, options.option, options.title
 			FROM ".$this->optionTable." AS options 
 			LEFT JOIN ".$this->questionTable." AS questions ON options.question_id = questions.id
-			WHERE questions.id = ?";			
+			WHERE questions.id = ? ";			
 					
 			$stmt = $this->conn->prepare($sqlQuery);
 			$stmt->bind_param("i", $this->question_id);	

@@ -164,7 +164,7 @@ $_SESSION['sender_id']=$_GET['id_user'];
     </main>
     </div>
 
-    <?php  include"inc/footer.php"; ?>
+    <?php  include "inc/footer.php"; ?>
     
     <script src="js/select.js"></script>
     <script src="js/stat.js"></script>

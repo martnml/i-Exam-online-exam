@@ -96,14 +96,14 @@ $_SESSION['the_user']=$_SESSION['userid'];
                 </li>
                 <br>
                 <li>
-                    <a href="../contact.php?id_user=9">
+                    <a href="student_contact.php?id_user=9">
 
                         <p style="font-size:17px;">contact admin</p>
                     </a>
                 </li>
                 <br>
                 <li>
-                    <a href="../../logout.php">
+                <a href="../../logout.php" onclick="return confirm('Are You sure you want to logout ?');">
                         <p style="font-size:17px;">Logout</p>
                     </a>
                 </li>
@@ -133,7 +133,7 @@ $_SESSION['the_user']=$_SESSION['userid'];
             </div>
 
             <div class="msg_icon" onclick="toggleNotifi()">
-                <img src="img/ring.png" alt="">
+                <img src="../../img/ring.png" alt="">
                 <span id="msg_count"></span>
 
             </div>
@@ -201,7 +201,7 @@ $_SESSION['the_user']=$_SESSION['userid'];
                                     <th>Option 3</th>
                                     <th>Option 4</th>
                                     <th>Your Answer</th>
-                                    <th>Answer</th>
+                                    <th>Right Answer</th>
                                     <th>Result</th>
                                     <th>Marks</th>
                                 </tr>

@@ -786,7 +786,7 @@ class Exam {
 			$examDetails = $this->getExamInfo();
 			$questionOption = $this->getQuestionAnswerOption();					
 			$marks = 0;
-			if($questionOption[answer] == $this->answer_option) {
+			if($questionOption['answer'] == $this->answer_option) {
 				$marks = '+' . $examDetails['marks_per_right_answer'];
 			} else {
 				$marks = '-' . $examDetails['marks_per_wrong_answer'];;
@@ -821,7 +821,7 @@ class Exam {
 				SELECT answer.question_id, answer.marks, question.question, question.answer, answer.user_answer_option
 				FROM ".$this->questionTable." question
 				LEFT JOIN ".$this->questionAnswerTable." answer ON answer.question_id = question.id
-				WHERE question.exam_id = ? $whereSQL"; 			
+				WHERE question.exam_id = ? $whereSQL GROUP BY question.id"; 			
 			$stmt = $this->conn->prepare($sqlQuery);
 			$stmt->bind_param("i", $this->exam_id);	
 			$stmt->execute();
