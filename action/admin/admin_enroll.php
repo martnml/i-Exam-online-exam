@@ -8,7 +8,7 @@
  <script src="../../js/enroll.js"></script>
  <script src="../../js/general.js"></script>
 
-
+ <title>iExam</title>
 </head>
 
 <body>

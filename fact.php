@@ -84,13 +84,13 @@ function get_notif($conn){
 
       echo(
 '<a href="message.php?id_msg='.$row_msg['id_msg'].'"><div class="notifi-item" id="msg">
-  <img src=" '. $row_msg['img_src'].'" alt="profile image" class="img">
+  <img src="../../img'. $row_msg['img_src'].'" alt="profile image" class="img">
   <div class="text">
 
       <h4>'. $row_msg['title']  .' </h4>
       <p>'. $row_msg['content'] .'<a href=""></a></p>
 
-      <img src="img/delete_sign.png" style="width:30px; margin-left:80%;"
+      <img src="../../img/delete_sign.png" style="width:30px; margin-left:80%;"
               
           type="button"      id="'.  $row_msg['id_msg'] .'" onclick="delete_notif(this.id)">
   </div>

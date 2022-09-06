@@ -28,7 +28,7 @@ setInterval(function () {  $(document).ready(function () {
 
     });
 })
-},30000);
+},15000);
 
 // setInterval(function () { 
      $(document).ready(function () {

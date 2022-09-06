@@ -16,7 +16,7 @@ $num_count= mysqli_num_rows($result_count);
 
 <head>
     <?php include('../../inc/header.php'); ?>
-    <title>teachers</title>
+    <title>iExam</title>
     <script src="../../js/exam.js"></script>
 
 </head>
@@ -25,9 +25,10 @@ $num_count= mysqli_num_rows($result_count);
 
     <input type="checkbox" id="nav-toggle">
     <img src="../../img/logout.jpeg" style="width:30px; border-radius:18px">
-    <div class="sidebar" style="width:14%;">
+    
+    <div class="sidebar" >
         <div class="sidebar-brand">
-            <h2><span class=""></span> <span>I-Exam</span></h2>
+            <h2><span class=""></span> <span></span></h2>
         </div>
 
         <div class="sidebar-menu">
@@ -35,9 +36,18 @@ $num_count= mysqli_num_rows($result_count);
                 <li>
                     <a href="teachers_exam.php" class="active">
                         </br>
-                        <p style="font-size:17px;">exams</p>
+                        <p style="font-size:17px;">My exams</p>
                     </a>
                 </li>
+
+                <li>
+                    <a href="#" >
+                        </br>
+                        <p style="font-size:17px;">My Students</p>
+                    </a>
+                </li>
+
+
 
 
 
@@ -72,7 +82,7 @@ $num_count= mysqli_num_rows($result_count);
                 <input type="search" placeholder="SEARCH" />
             </div> -->
             <div class="user-wrapper">
-                <a href="../profile.php"><img src="<?php echo $_SESSION['img']; ?>" width="40px" height="40px" alt=""></a>
+                <a href="../profile.php"><img src="../../img/<?php echo $_SESSION['img']; ?>" width="40px" height="40px" alt=""></a>
                 <div>
                     <h4> <?php echo $_SESSION['name']; ?> </h4>
                     <small> <?php echo $_SESSION['role']; ?> </small>

@@ -29,7 +29,7 @@ include('../../fact.php');
 <head>
     <?php include('../../inc/header.php');?>
 
-    <title>teachers</title>
+    <title>iExam</title>
 
     <link rel="stylesheet" href="css/TimeCircles.css" />
     <script src="../../js/TimeCircles.js"></script>

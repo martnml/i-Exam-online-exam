@@ -33,7 +33,7 @@ $num_count= mysqli_num_rows($result_count);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-    <title>exams</title>
+    <title>iExam</title>
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="../../css/admin.css">
@@ -106,7 +106,7 @@ $num_count= mysqli_num_rows($result_count);
                 <input type="search" placeholder="SEARCH" />
             </div> -->
             <div class="user-wrapper">
-                <a href="../profile.php"><img src="../../img/<?php echo $_SESSION['img']; ?>" width="40px" height="40px" alt=""></a>
+                <a href="../profile.php"><img src="../../img/admin_avatar.svg" width="40px" height="40px" alt=""></a>
                 <div>
                     <h4> <?php echo $_SESSION['name']; ?> </h4>
                     <small> <?php echo $_SESSION['role']; ?> </small>

@@ -32,7 +32,7 @@ $_SESSION['the_user']=$_SESSION['userid'];
 
 <head>
     <?php include('../../inc/header.php');?>
-    <title>students</title>
+    <title>iExam</title>
     <script src="../../js/user_exam.js"></script>
 
 </head>
@@ -87,10 +87,9 @@ $_SESSION['the_user']=$_SESSION['userid'];
                 </label> I-<font style="color:#ff4546;">Exam</font>
             </h2>
 
-            <!-- <div class="search-wrapper">
-                <span class="las la-search"></span>
-                <input type="search" placeholder="SEARCH" />
-            </div> -->
+
+
+            
             <div class="user-wrapper">
                 <a href="../profile.php"><img src="<?php echo "../../".$_SESSION['img']; ?>" width="40px" height="40px" alt=""></a>
                 <div>

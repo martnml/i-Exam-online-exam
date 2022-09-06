@@ -9,7 +9,7 @@ include "../login_header.php";
 
 <?php include "../../inc/header.php"; ?>
 
-<title>students</title>
+<title>iExam</title>
 <script src="../../js/user.js"></script>
 
 </head>

@@ -15,7 +15,8 @@ $_SESSION['sender_id']=$_GET['id_user'];
 <html lang="en">
 <head>
     <?php  include('inc/header.php'); ?>
-    <title>contact</title>
+    <link href="img/logo.png" rel="icon">
+    <title>iExam</title>
 </head>
 
 <body style="background-color:#e7eaf1;">

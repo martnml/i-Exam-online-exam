@@ -32,11 +32,9 @@ $_SESSION['sender_id']=$_GET['id_user'];
 <head>
 
 <?php include_once '../../inc/header.php' ?>;
-    <title>contact</title>
+
+<title>iExam</title>
 </head>
-
-
-
 
 
 <body >
@@ -53,31 +51,6 @@ $_SESSION['sender_id']=$_GET['id_user'];
                         </br>
                         <p style="font-size:17px;">exams</p>
                     </a>
-                </li>
-
-
-                <li>
-                    <a href="#">
-                        </br>
-                        <p style="font-size:17px;margin-left:25px;">
-                            exam questions</p>
-                    </a>
-
-                </li>
-                <li>
-                    <a href="#">
-                        </br>
-                        <p style="font-size:17px;margin-left:25px;">students results</p>
-                    </a>
-
-                </li>
-
-                <li>
-                    <a href="#">
-                        </br>
-                        <p style="font-size:17px;margin-left:40px;">his\her result</p>
-                    </a>
-
                 </li>
 
                 <li>

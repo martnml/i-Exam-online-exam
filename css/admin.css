@@ -98,7 +98,7 @@ body {
 
 .main-content {
   transition: margin-left 300ms;
-  margin-left: 250px;
+  margin-left: 20%;
 }
 
 header {
@@ -166,7 +166,7 @@ header label span {
 }
 
 main {
-  margin: 2%;
+  margin: 5% 0%;
   padding: 10% 2%;
   background: #f1f5f9;
   min-height: calc(100vh - 90px);
@@ -339,11 +339,11 @@ tr td:last-child {
     display: none;
   }
   .main-content {
-    margin-left: 5%;
+    margin-left: 16%;
   }
   .main-content header {
     width: calc(100% - 70px);
-    left: 14%;
+    left: 12%;
   }
 }
 
@@ -487,7 +487,7 @@ textarea {
   content: "get in touch";
 }
 .contact .contact-content .column {
-  width: calc(50% - 30px);
+  /* width: calc(50% - 30px); */
 }
 .contact .contact-content .text {
   font-size: 20px;

@@ -5,7 +5,7 @@
 
 <head>
 <?php  include "../../inc/header.php"; ?>
-    <title>teachers</title>
+<title>iExam</title>
 
 
 <body>

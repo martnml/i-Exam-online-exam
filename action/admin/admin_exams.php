@@ -12,7 +12,7 @@ $num_count= mysqli_num_rows($result_count);
 <html lang="en">
 <head>
 <?php include "../../inc/header.php" ?>
-<title>exams</title>
+<title>iExam</title>
 <script src="../../js/exam.js"></script>
 </head>
 
@@ -119,7 +119,7 @@ $num_count= mysqli_num_rows($result_count);
                             <a href=""></a>
 
                         </p>
-                        <img src="img/delete_sign.png" style="width:30px; margin-left:80%;" type="button"
+                        <img src="../../img/delete_sign.png" style="width:30px; margin-left:80%;" type="button"
                             name="delete_notif" id="<?php echo $row_msg['id_msg']; ?>" onclick="delete_notif(this.id)">
                     </div>
                 </div>

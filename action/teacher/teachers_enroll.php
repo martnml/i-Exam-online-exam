@@ -16,7 +16,7 @@ $num_count= mysqli_num_rows($result_count);
 <html lang="en">
 <head>
     <?php include('../../inc/header.php');?>
-    <title>teachers</title>
+    <title>iExam</title>
     <script src="../../js/enroll.js"></script>
     <script src="../../js/general.js"></script>
 

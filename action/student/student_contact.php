@@ -33,7 +33,7 @@ $_SESSION['sender_id']=$_GET['id_user'];
   
 <?php include_once '../../inc/header.php' ?>;
 
-<title>contact</title>
+<title>iExam</title>
 </head>
 
 <body >
@@ -85,10 +85,7 @@ $_SESSION['sender_id']=$_GET['id_user'];
 
             
             
-            <div class="search-wrapper">
-                <span class="las la-search"></span>
-                <input type="search" placeholder="SEARCH" />
-            </div> 
+           
 
 
             <div class="user-wrapper">
@@ -113,7 +110,7 @@ $_SESSION['sender_id']=$_GET['id_user'];
         </header>
 
         <center>
-        <main style="background-color:#e7eaf1;">
+        <main style=" width:auto;" >
 
            
                 <br><br>
@@ -194,7 +191,7 @@ $_SESSION['sender_id']=$_GET['id_user'];
     </center>
     </div>
 
-    <?php  include "../inc/footer.php"; ?>
+    <?php  include_once "../../inc/footer.php"; ?>
     
     <!-- <script src="../js/select.js"></script> -->
     <script src="../../js/js_notification.js"></script>

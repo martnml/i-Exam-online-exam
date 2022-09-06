@@ -64,7 +64,7 @@ $_SESSION['the_user']=$_SESSION['userid'];
   
 
 </head>
-
+<title>iExam</title>
 <body>
 
     <input type="checkbox" id="nav-toggle">

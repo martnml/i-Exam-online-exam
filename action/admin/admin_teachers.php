@@ -18,7 +18,7 @@ $num_count = mysqli_num_rows($result_count);
     <?php  include('../../inc/header.php'); ?>
     <script src="../../js/general.js"></script>
     <script src="../../js/user.js"></script>
-    <title>students</title>
+    <title>iExam</title>
 
 
 </head>

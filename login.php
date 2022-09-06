@@ -64,7 +64,8 @@ if (!empty($_POST["login"]) && !empty($_POST["email"]) && !empty($_POST["passwor
     <link rel="stylesheet" href="css/login.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/tag.css" />
-    <title>Login</title>
+    <link href="img/logo.png" rel="icon">
+    <title>iExam</title>
 </head>
 
 <body>

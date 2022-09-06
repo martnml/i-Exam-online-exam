@@ -18,11 +18,12 @@ $result=mysqli_query($conn,$sql_faculty);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="js/64d58efce2.js" crossorigin="anonymous"></script>
     <script src="js/jquery.min.js"></script>
+    <link href="img/logo.png" rel="icon">
     <link rel="stylesheet" href="css/login.css" />
     <link rel="stylesheet" href="css/tag.css" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="js/sign.js"></script>
-    <title>Sign in & Sign up Form</title>
+    <title>iExam</title>
 </head>
 
 <body>

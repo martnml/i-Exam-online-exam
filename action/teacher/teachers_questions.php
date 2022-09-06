@@ -1,4 +1,5 @@
 <?php
+
 include_once '../login_header.php';
 
 $id_user=$_SESSION['userid'];
@@ -6,13 +7,7 @@ $sql_count="SELECT * FROM message  WHERE (message.reciever_id='$id_user' AND mes
 $result_count=mysqli_query($conn, $sql_count);
 $num_count= mysqli_num_rows($result_count);
 
-
-
-
 ?>
-
-
-
 
 
 <!DOCTYPE html>
@@ -20,10 +15,8 @@ $num_count= mysqli_num_rows($result_count);
 
 <head>
     <?php include('../../inc/header.php'); ?>
-    <title>teachers</title>
     <script src="../../js/questions.js"></script>
-  
-
+    <title>iExam</title>
 
 </head>
 
@@ -119,7 +112,6 @@ $num_count= mysqli_num_rows($result_count);
                     </div>
                 </div>
 
-
                 <div class="card-single">
                     <div>
                         <h1></h1>
@@ -163,9 +155,6 @@ $num_count= mysqli_num_rows($result_count);
                             <button>show all <span class="las la-arrow-right">
                             </span></button> -->
                     </div>
-
-
-
 
                     <br>
                     <div>
@@ -294,8 +283,8 @@ $num_count= mysqli_num_rows($result_count);
         </main>
 
     </div>
-    <script src="../../js/stat.js"></script>
-    <script src="../../js/js_notification.js"></script>
+    <!-- <script src="../../js/stat.js"></script>
+    <script src="../../js/js_notification.js"></script> -->
 </body>
 
 </html>
