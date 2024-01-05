@@ -10,7 +10,7 @@ and also help teachers to generate their exam on remote .
 
 
 
-## ----------------------------    # Build with  ---------------------------
+## Build with  
 
 *HTML5
 *PHP
