@@ -1,5 +1,5 @@
 
-----------------------------------------  #I-Exam -----------------------------------------------
+## ----------------------------------------  #I-Exam -----------------------------------------------
 
 
 the point of this web application is giving the students accebility to pass their exams online , 
@@ -10,7 +10,7 @@ and also help teachers to generate their exam on remote .
 
 
 
-----------------------------    # Build with
+## ----------------------------    # Build with  ---------------------------
 
 *HTML5
 *PHP
@@ -22,7 +22,7 @@ and also help teachers to generate their exam on remote .
 
 *CSS 3,SCSS,SASS
 
------------------------------   # Created with
+## Created with :
 
 *Visual studio code editor
 
@@ -35,7 +35,7 @@ and also help teachers to generate their exam on remote .
 *BOOSTRAP version 3,5
 
 
-----------------------------    #INSTALATION             ----------------------------------------
+## INSTALATION  :           
 
 
 
@@ -52,15 +52,13 @@ NOTE :    "if you had issues uploading database connection ; you can change
            and change "password" variable to -->    'pass' .
 
 
-
-------------------------------      # USAGE       ----------------------------------------
+## USAGE  :       
 
 1- activate appache & mysqli servers 
 
 2- tap in navigator  the link : "http://localhost/web_exam5/welcome.php"
 
-
-----------------------------------   #LICENCE        ----------------------------------------
+## LICENCE :
 
  This website "I-EXAM"  has been designed & created by >> ZERGAOUI MOHAMED EL AMINE  <<
  in terms of a scolar researches
