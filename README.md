@@ -1,5 +1,5 @@
 
-## ----------------------------------------  #I-Exam -----------------------------------------------
+## ------------------  #I-Exam -----------------
 
 
 the point of this web application is giving the students accebility to pass their exams online , 
