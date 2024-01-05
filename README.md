@@ -56,7 +56,7 @@ NOTE :    "if you had issues uploading database connection ; you can change
 
 1- activate appache & mysqli servers 
 
-2- tap in navigator  the link : "http://localhost/web_exam5/welcome.php"
+2- the main index file : "web_exam5/welcome.php"
 
 ## LICENCE :
 
